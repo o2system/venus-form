@@ -9,24 +9,17 @@
  */
 // ------------------------------------------------------------------------
 
-import $ from 'jquery';
-import Input from './Components/Input';
-import Select from './Components/Select';
+import * as $ from 'jquery';
+import 'inputmask';
 
 /**
- * Class Venus
+ * Class Mask
+ *
+ * @author          Teguh Rianto
+ * @package         Components/Input
  */
-class VenusForm {
+export default class Mask {
     constructor() {
-        window.$ = window.jQuery = $;
-        
-        /**
-         * Initiate component input
-         */
-        this.input = new Input();
-        
-        this.select = new Select();
+        $('[data-inputmask="*"]').inputmask();
     }
 }
-
-export default VenusForm;

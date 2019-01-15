@@ -68,7 +68,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "o2system-venus-ui": "git+https://github.com/o2system/venus-ui.git",
     "bootstrap-colorpicker": "^3.0.3",
     "bootstrap-datepicker": "^1.8.0",
     "bootstrap-daterangepicker": "^3.0.3",
@@ -78,9 +77,11 @@
     "bootstrap-timepicker": "^0.5.2",
     "clockpicker": "0.0.7",
     "dropzone": "^5.5.1",
+    "inputmask": "^4.0.6",
     "jquery-steps": "github:rstaib/jquery-steps#master",
     "jquery-validation": "^1.19.0",
     "moment": "^2.23.0",
+    "o2system-venus-ui": "git+https://github.com/o2system/venus-ui.git",
     "parsleyjs": "^2.8.1",
     "select2": "^4.0.6-rc.1",
     "selectize": "^0.12.6",

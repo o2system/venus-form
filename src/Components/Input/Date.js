@@ -13,6 +13,7 @@ import * as $ from 'jquery';
 import * as moment from 'moment';
 import 'bootstrap-datepicker';
 import 'bootstrap-daterangepicker';
+import './Date.scss';
 
 /**
  * Class Date

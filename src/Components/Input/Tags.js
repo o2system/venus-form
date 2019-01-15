@@ -20,6 +20,6 @@ import 'bootstrap-tagsinput';
  */
 export default class Tags {
     constructor() {
-
+        $('.tags').tagsinput();
     }
 }

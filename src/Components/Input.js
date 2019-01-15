@@ -9,10 +9,26 @@
  */
 // ------------------------------------------------------------------------
 
-/**
-         * Initiate input object
-         */
-this.input = new Object();
+import Date from './Input/Date';
+import Time from './Input/Time';
+import Tags from './Input/Tags';
+import Mask from './Input/Mask';
 
-this.input.date = new Date();
-this.input.time = new Time();
+/**
+ * Class Input
+ *
+ * @author          Teguh Rianto
+ * @package         Components
+ */
+export default class Input {
+
+    /**
+     * Input.constructor
+     */
+    constructor() {
+        this.date = new Date();
+        this.time = new Time();
+        this.tags = new Tags();
+        this.mask = new Mask();
+    }
+}
