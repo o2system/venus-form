@@ -9,12 +9,11 @@
  */
 // ------------------------------------------------------------------------
 
-import VenusUi from 'o2system-venus-ui';
 import "./main.scss";
 
-import VenusForm from './VenusForm';
+import Form from './Form';
 
 /**
  * Venus Object
  */
-module.exports = new VenusForm();
+module.exports = new Form();
