@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------
 
 import * as $ from 'jquery';
-import 'inputmask';
+import Inputmask from 'inputmask';
 
 /**
  * Class Mask
@@ -20,6 +20,6 @@ import 'inputmask';
  */
 export default class Mask {
     constructor() {
-        $('[data-inputmask="*"]').inputmask();
+        $('[data-inputmask="*"]').inputmask({ "mask": "(999) 999-9999" });
     }
 }
