@@ -8,11 +8,15 @@
  * @copyright      Copyright (c) Steeve Andrian Salim
  */
 // ------------------------------------------------------------------------
-@import "_components/vendor";
-@import "_components/mixins";
-@import "_components/switchery";
-@import "_components/form-advanced";
-@import "_components/form-validation";
-@import "_components/form-pickers";
-@import "_components/form-wizard";
-@import "_components/form-upload";
+
+/**
+ * Class InputMask
+ * 
+ * @author          Teguh Rianto
+ * @package         Components
+ */
+export default class InputMask {
+    constructor(){
+        
+    }
+}

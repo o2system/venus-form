@@ -1,5 +1,5 @@
 import * as $ from 'jquery';
-import 'tinymce';
+import tinymce from 'tinymce/tinymce';
 
 $(document).ready(function () {
     // TinyMCE Post Editor

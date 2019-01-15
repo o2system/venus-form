@@ -10,21 +10,26 @@
 // ------------------------------------------------------------------------
 
 import $ from 'jquery';
-require('./js/form-advanced');
-require('./js/form-validation');
-require('./js/form-timepicker');
-require('./js/form-datepicker');
-require('./js/form-daterangepicker');
-require('./js/form-mask');
-require('./js/form-wizard');
-require('./js/form-editor');
-require('./js/form-upload');
+import Date from './Components/Input/Date';
+import Time from './Components/Input/Time';
+import Select from './Components/Select';
+
 /**
  * Class Venus
  */
 class VenusForm {
     constructor() {
         window.$ = window.jQuery = $;
+        
+        /**
+         * Initiate input object
+         */
+        this.input = new Object();
+
+        this.input.date = new Date();
+        this.input.time = new Time();
+
+        this.select = new Select();
     }
 }
 

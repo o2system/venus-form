@@ -8,11 +8,11 @@
  * @copyright      Copyright (c) Steeve Andrian Salim
  */
 // ------------------------------------------------------------------------
-@import "_components/vendor";
-@import "_components/mixins";
-@import "_components/switchery";
-@import "_components/form-advanced";
-@import "_components/form-validation";
-@import "_components/form-pickers";
-@import "_components/form-wizard";
-@import "_components/form-upload";
+
+/**
+         * Initiate input object
+         */
+this.input = new Object();
+
+this.input.date = new Date();
+this.input.time = new Time();
