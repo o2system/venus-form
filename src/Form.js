@@ -14,6 +14,8 @@ import Input from './Components/Input';
 import Select from './Components/Select';
 import Validation from './Components/Validation';
 import Wizard from './Components/Wizard';
+import Upload from './Components/Upload';
+import Editor from './Components/Editor';
 
 /**
  * Class Form
@@ -32,5 +34,9 @@ export default class Form {
         this.validation = new Validation();
 
         this.wizard = new Wizard();
+
+        this.upload = new Upload();
+
+        this.editor = new Editor();
     }
 }

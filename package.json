@@ -76,6 +76,7 @@
     "bootstrap-tagsinput": "^0.7.1",
     "bootstrap-timepicker": "^0.5.2",
     "clockpicker": "0.0.7",
+    "dropify": "^0.2.2",
     "dropzone": "^5.5.1",
     "inputmask": "^4.0.6",
     "jquery-steps": "github:rstaib/jquery-steps#master",
