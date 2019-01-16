@@ -13,6 +13,7 @@ import Date from './Input/Date';
 import Time from './Input/Time';
 import Tags from './Input/Tags';
 import Mask from './Input/Mask';
+import File from './Input/File';
 
 /**
  * Class Input
@@ -30,5 +31,6 @@ export default class Input {
         this.time = new Time();
         this.tags = new Tags();
         this.mask = new Mask();
+        this.file = new File();
     }
 }

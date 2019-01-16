@@ -14,6 +14,6 @@ import "./main.scss";
 import Form from './Form';
 
 /**
- * Venus Object
+ * Form Object
  */
-module.exports = new Form();
+export default new Form();

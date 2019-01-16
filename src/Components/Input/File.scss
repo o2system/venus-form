@@ -1,0 +1,5 @@
+/* Bootstrap Filestyle */
+.input-group-btn:not(:first-child) > .btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

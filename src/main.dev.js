@@ -13,13 +13,13 @@
 import "@babel/polyfill";
 import "@babel/register";
 import "webpack-hot-middleware/client?reload=true";
-import { VenusUi } from 'o2system-venus-ui';
+import UserInterface from 'o2system-venus-ui';
 import "./main.scss";
 import "./index.html";
 
-import VenusForm from './VenusForm';
+import Form from './Form';
 
 /**
- * VenusForm Object
+ * Form Object
  */
-export default new VenusForm();
+export default new Form();

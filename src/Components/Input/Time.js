@@ -11,6 +11,7 @@
 
 import * as $ from 'jquery';
 import 'bootstrap-timepicker';
+import './Time.scss';
 
 /**
  * Class Time

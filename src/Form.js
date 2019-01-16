@@ -12,11 +12,13 @@
 import $ from 'jquery';
 import Input from './Components/Input';
 import Select from './Components/Select';
+import Validation from './Components/Validation';
+import Wizard from './Components/Wizard';
 
 /**
- * Class Venus
+ * Class Form
  */
-class VenusForm {
+export default class Form {
     constructor() {
         window.$ = window.jQuery = $;
         
@@ -26,7 +28,9 @@ class VenusForm {
         this.input = new Input();
         
         this.select = new Select();
+
+        this.validation = new Validation();
+
+        this.wizard = new Wizard();
     }
 }
-
-export default VenusForm;

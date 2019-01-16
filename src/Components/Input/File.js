@@ -8,11 +8,19 @@
  * @copyright      Copyright (c) Steeve Andrian Salim
  */
 // ------------------------------------------------------------------------
-// @import "_components/vendor";
-// @import "_components/mixins";
-// @import "_components/switchery";
-// @import "_components/form-advanced";
-// @import "_components/form-validation";
-// @import "_components/form-pickers";
-// @import "_components/form-wizard";
-// @import "_components/form-upload";
+
+import * as $ from 'jquery';
+import 'bootstrap-filestyle2';
+import './File.scss';
+
+/**
+ * Class File
+ *
+ * @author          Teguh Rianto
+ * @package         Components/Input
+ */
+export default class File {
+    constructor() {
+        $(":file").filestyle({ input: false });
+    }
+}

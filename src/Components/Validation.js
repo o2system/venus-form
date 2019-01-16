@@ -9,14 +9,18 @@
  */
 // ------------------------------------------------------------------------
 
+import * as $ from 'jquery';
+import 'parsleyjs';
+import './Validation.scss';
 /**
- * Class InputMask
- * 
+ * Class Validation
+ *
  * @author          Teguh Rianto
  * @package         Components
  */
-export default class InputMask {
-    constructor(){
-        
+
+export default class Validation {
+    constructor() {
+        $('.form-validation').parsley();
     }
 }

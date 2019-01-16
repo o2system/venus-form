@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------
 
 import * as $ from 'jquery';
-import Inputmask from 'inputmask';
+import 'inputmask/dist/jquery.inputmask.bundle';
 
 /**
  * Class Mask

@@ -4,25 +4,7 @@
 
 
 /* Time Picker */
-.bootstrap-timepicker-widget table td input {
-  height: 32px;
-  width: 32px;
-  color: $white;
-  background-color: $primary;
-  border-radius: 50%;
-  border: none;
-}
-.bootstrap-timepicker-widget table td a:hover {
-  background-color: transparent;
-  border: 1px solid transparent;
-  color: $primary;
-}
 
-.bootstrap-timepicker-widget.dropdown-menu{
-  &:before{
-    display: none;
-  }
-}
 
 
 /* Color Picker */

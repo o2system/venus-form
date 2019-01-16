@@ -11,6 +11,7 @@
 
 import * as $ from 'jquery';
 import 'bootstrap-tagsinput';
+import './Tags.scss';
 
 /**
  * Class Tags
