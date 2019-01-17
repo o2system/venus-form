@@ -26,7 +26,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/o2system/venus-admin/issues"
+    "url": "https://github.com/o2system/venus-form/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
