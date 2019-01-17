@@ -13,6 +13,7 @@ import * as $ from 'jquery';
 import 'select2';
 import 'bootstrap-select';
 import 'selectize';
+import './Select.scss'
 
 /**
  * Class Select

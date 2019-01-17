@@ -14,7 +14,6 @@ import "@babel/polyfill";
 import "@babel/register";
 import "webpack-hot-middleware/client?reload=true";
 import UserInterface from 'o2system-venus-ui';
-import "./main.scss";
 import "./index.html";
 
 import Form from './Form';

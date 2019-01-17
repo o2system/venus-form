@@ -1,7 +1,7 @@
 {
-  "name": "o2system-venus-admin",
+  "name": "o2system-venus-form",
   "version": "1.0.0",
-  "description": "O2System Admin Interface Framework",
+  "description": "O2System Form Interface Framework",
   "homepage": "https://venus.o2system.id/admin",
   "main": "main.js",
   "scripts": {
