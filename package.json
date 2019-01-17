@@ -2,7 +2,7 @@
   "name": "o2system-venus-form",
   "version": "1.0.0",
   "description": "O2System Form Interface Framework",
-  "homepage": "https://venus.o2system.id/admin",
+  "homepage": "https://venus.o2system.id/form",
   "main": "main.js",
   "scripts": {
     "start": "webpack-dev-server --config=config/webpack.dev.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/o2system/venus-admin.git"
+    "url": "git+https://github.com/o2system/venus-form.git"
   },
   "keywords": [
     "o2system",
