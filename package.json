@@ -5,9 +5,10 @@
   "homepage": "https://venus.o2system.id/form",
   "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server --config=config/webpack.dev.js",
+    "start": "npm run dev",
     "build": "webpack --config=config/webpack.build.js",
-    "dev": "nodemon --inspect --watch config --watch server server/main.js"
+    "build:docs": "webpack --config=config/webpack.docs.js",
+    "dev": "webpack-dev-server --config=config/webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -32,10 +33,9 @@
     "@babel/core": "^7.2.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/register": "^7.0.0",
-    "@babel/runtime": "^7.2.0",
     "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/runtime": "^7.2.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
     "cssnano": "^4.1.8",
@@ -47,7 +47,6 @@
     "imports-loader": "^0.8.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1",
