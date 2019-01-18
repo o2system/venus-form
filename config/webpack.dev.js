@@ -28,13 +28,13 @@ module.exports = {
         hot: true,
         open: true,
         historyApiFallback: true,
-        contentBase: "dev",
+        contentBase: "dist",
         overlay: true,
         stats: {
             colors: true
         }
     },
-    devtool: "source-map",
+    // devtool: "source-map",
     module: {
         rules: [
             {
@@ -44,6 +44,12 @@ module.exports = {
                 }],
                 exclude: /(node_modules|bower_components)/
             },
+
+            {
+                test: /tinymce[\\/]skins[\\/]/,
+                loader: 'file?name=[path][name].[ext]&context=node_modules/tinymce'
+            },
+
             {
                 test: /\.(jpg|jpeg|gif|png|webpm|svg)$/,
                 use: [
@@ -73,9 +79,17 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     {
                         loader: "css-loader",
-                        options: { importLoaders: 1, sourceMap: true },
+                        options: { import: true, url: false, importLoaders: 2, sourceMap: true },
                     },
-                    'sass-loader',
+                    // {
+                    //     loader: 'postcss-loader',
+                    //     options: {
+                    //         config: {
+                    //             path: __dirname + '/postcss.config.js'
+                    //         }
+                    //     }
+                    // },
+                    'sass-loader'
                 ],
             },
             {
@@ -85,6 +99,9 @@ module.exports = {
                 }]
             }
         ]
+    },
+    resolveLoader: {
+        moduleExtensions: ["-loader"]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),

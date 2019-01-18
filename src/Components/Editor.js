@@ -12,6 +12,13 @@
 import tinymce from 'tinymce/tinymce';
 import 'tinymce/themes/modern/theme';
 import 'tinymce/themes/inlite/theme';
+
+import 'tinymce/skins/lightgray/skin.min.css';
+import 'tinymce/skins/lightgray/content.min.css';
+import 'tinymce/skins/lightgray/content.inline.min.css';
+import 'tinymce/skins/lightgray/content.mobile.min.css';
+import 'tinymce/skins/lightgray/skin.mobile.min.css';
+
 import 'tinymce/plugins/advlist/plugin.js';
 import 'tinymce/plugins/autolink/plugin.js';
 import 'tinymce/plugins/lists/plugin.js';
