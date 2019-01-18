@@ -45,10 +45,10 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/
             },
 
-            {
-                test: /tinymce[\\/]skins[\\/]/,
-                loader: 'file?name=[path][name].[ext]&context=node_modules/tinymce'
-            },
+            // {
+            //     test: /tinymce[\\/]skins[\\/]/,
+            //     loader: 'file?name=[path][name].[ext]&context=node_modules/tinymce'
+            // },
 
             {
                 test: /\.(jpg|jpeg|gif|png|webpm|svg)$/,
@@ -79,7 +79,7 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     {
                         loader: "css-loader",
-                        options: { import: true, url: false, importLoaders: 2, sourceMap: true },
+                        options: { importLoaders: 2, sourceMap: true },
                     },
                     // {
                     //     loader: 'postcss-loader',
@@ -100,9 +100,9 @@ module.exports = {
             }
         ]
     },
-    resolveLoader: {
-        moduleExtensions: ["-loader"]
-    },
+    // resolveLoader: {
+    //     moduleExtensions: ["-loader"]
+    // },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
