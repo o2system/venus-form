@@ -37,12 +37,10 @@ export default class Upload {
         if (typeof Dropzone != 'undefined') {
             var urlAction = $('[name="dropzone-url"]').val();
 
-            var previewNode = document.querySelector('#dropzone-preview');
-            previewNode.id = "";
-            var previewTemplate = previewNode.parentNode.innerHTML;
-            previewNode.parentNode.removeChild(previewNode);
-
-            console.log(previewNode.parentNode);
+            var previewNode = $('#dropzone-preview');
+            previewNode.removeAttr('id');
+            var previewTemplate = previewNode.parent().html();
+            previewNode.parent().remove();
 
             var mediaDropzone = new Dropzone(document.querySelector(".dropzone-form"), { // Make the whole body a dropzone
                 url: urlAction,
