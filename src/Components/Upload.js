@@ -42,14 +42,14 @@ export default class Upload {
             var previewTemplate = previewNode.parent().html();
             previewNode.parent().remove();
 
-            var mediaDropzone = new Dropzone(document.querySelector(".dropzone-form"), { // Make the whole body a dropzone
+            var mediaDropzone = $(".dropzone-form").dropzone({
                 url: urlAction,
                 autoProcessQueue: true,
                 thumbnailWidth: null,
                 thumbnailHeight: null,
                 previewTemplate: previewTemplate, // Define the container to display the previews
                 //clickable: ".fileinput-button", // Define the element that should be used as click trigger to select files.
-            });
+             });
 
             mediaDropzone.on("addedfile", function (file) {
 
