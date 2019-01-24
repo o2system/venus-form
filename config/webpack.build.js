@@ -24,8 +24,8 @@ module.exports = merge(common, {
 	},
 	output: {
 		filename: "[name].js",
-		path: path.resolve(process.cwd(), "dist"),
-		publicPath: "/"
+		path: path.resolve(process.cwd(), "dist")
+		// publicPath: "/"
 	},
 	module: {
 		rules: [{
