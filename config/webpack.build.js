@@ -28,18 +28,20 @@ module.exports = merge(common, {
 		publicPath: "/"
 	},
 	module: {
-		rules: [{
-			test: /\.(sa|sc|c)ss$/,
-			use: [
-				MiniCssExtractPlugin.loader,
-				{
-					loader: "css-loader",
-					options: {importLoaders: 1, sourceMap: true},
-				},
-				'sass-loader',
+		rules: [
+			{
+				test: /\.(sa|sc|c)ss$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: "css-loader",
+						options: {importLoaders: 1, sourceMap: true},
+					},
+					'sass-loader',
 
-			],
-		}]
+				],
+			}
+		]
 	},
 
 	plugins: [

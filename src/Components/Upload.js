@@ -12,7 +12,6 @@
 import * as $ from 'jquery';
 import * as Dropzone from 'dropzone';
 import 'dropify/dist/js/dropify'
-import './Upload.scss';
 /**
  * Class Upload
  *

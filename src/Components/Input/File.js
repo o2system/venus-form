@@ -11,7 +11,6 @@
 
 import * as $ from 'jquery';
 import 'bootstrap-filestyle2';
-import './File.scss';
 
 /**
  * Class File

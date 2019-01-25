@@ -11,7 +11,6 @@
 
 import * as $ from 'jquery';
 import 'parsleyjs';
-import './Validation.scss';
 /**
  * Class Validation
  *

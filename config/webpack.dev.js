@@ -8,11 +8,13 @@
  * @copyright      Copyright (c) Steeve Andrian Salim
  */
 // ------------------------------------------------------------------------
-
 const path = require("path");
+const common = require('./webpack.common.js');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -37,6 +39,7 @@ module.exports = {
     // devtool: "source-map",
     module: {
         rules: [
+            
             {
                 test: /\.js$/,
                 use: [{
@@ -79,7 +82,7 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     {
                         loader: "css-loader",
-                        options: { importLoaders: 2, sourceMap: true },
+                        //options: { importLoaders: 2, sourceMap: true },
                     },
                     // {
                     //     loader: 'postcss-loader',
@@ -89,7 +92,7 @@ module.exports = {
                     //         }
                     //     }
                     // },
-                    'sass-loader'
+                    { loader: "sass-loader" },
                 ],
             },
             {
