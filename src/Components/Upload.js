@@ -51,6 +51,9 @@ export default class Upload {
              });
 
             mediaDropzone.on("addedfile", function (file) {
+                var fileId = 'media' + document.querySelectorAll('.media-list-item').length;
+                file.previewElement.getElementsByTagName('input')[0].setAttribute('id', fileId);
+                file.previewElement.getElementsByTagName('label')[0].setAttribute('for', fileId);
 
                 var imagesFileTypes = ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'];
                 if (imagesFileTypes.indexOf(file.type) != -1) {

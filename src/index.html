@@ -1534,7 +1534,7 @@
                         <div class="card mb-2">
                             <div class="card-body">
                                 <form>
-                                    <input type="hidden" value="http://example.com/action" name="dropzone-url">
+                                    <input type="hidden" value="http://localhost:8080/" name="dropzone-url">
                                     <div class="media-list">
                                         <div class="dropzone-form" style="cursor: pointer;">
                                             <div class="dz-message needsclick">
@@ -1552,8 +1552,9 @@
                                                                 <i class="fas fa-trash"></i>
                                                             </button>
                                                         </div>
-                
-                                                        <div class="media-item">
+                                                        
+                                                        <input type="checkbox" id="media-1">
+                                                        <label class="media-item" for="media-1">
                                                             <img data-dz-thumbnail>
                                                             <div class="media-item-file-details">
                                                                 <div class="media-item-icon">
@@ -1562,7 +1563,7 @@
                                                                 <div class="media-item-file-name" data-dz-name></div>
                                                                 <div class="media-item-file-extension"></div>
                                                             </div>
-                                                        </div>
+                                                        </label>
                 
                                                         <div class="upload-progress">
                                                             <div class="progress">
