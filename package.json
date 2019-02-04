@@ -70,7 +70,6 @@
     "bootstrap-colorpicker": "^3.0.3",
     "bootstrap-datepicker": "^1.8.0",
     "bootstrap-daterangepicker": "^3.0.3",
-    "bootstrap-filestyle2": "^2.1.0",
     "bootstrap-select": "^1.13.5",
     "bootstrap-tagsinput": "^0.7.1",
     "bootstrap-timepicker": "^0.5.2",
@@ -88,6 +87,6 @@
     "selectize-bootstrap4-theme": "^2.0.2",
     "sweetalert2": "^7.33.1",
     "switchery": "0.0.2",
-    "tinymce": "^4.9.2"
+    "tinymce": "^4.9.3"
   }
 }
