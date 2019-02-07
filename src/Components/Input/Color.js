@@ -10,17 +10,22 @@
 // ------------------------------------------------------------------------
 
 import * as $ from 'jquery';
-import 'bootstrap-filestyle2';
-import './File.scss';
+import 'bootstrap-colorpicker';
+import 'bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css';
 
 /**
- * Class File
- *
+ * Class Color
+ * 
  * @author          Teguh Rianto
  * @package         Components/Input
  */
-export default class File {
+export default class Color {
     constructor() {
-        $(":file").filestyle({ input: false });
+        /**
+         * Initiate basic Color picker
+         */
+        $('.color-picker').colorpicker({
+            format: 'hex'
+        });
     }
 }

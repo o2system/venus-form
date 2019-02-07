@@ -13,7 +13,6 @@ import * as $ from 'jquery';
 import 'jquery-steps/build/jquery.steps.js';
 import 'jquery-validation';
 import Swal from 'sweetalert2';
-import './Wizard.scss';
 /**
  * Class Wizard
  *

@@ -12,6 +12,13 @@
 import tinymce from 'tinymce/tinymce';
 import 'tinymce/themes/modern/theme';
 import 'tinymce/themes/inlite/theme';
+
+import 'tinymce/skins/lightgray/skin.min.css';
+import 'tinymce/skins/lightgray/content.min.css';
+import 'tinymce/skins/lightgray/content.inline.min.css';
+import 'tinymce/skins/lightgray/content.mobile.min.css';
+import 'tinymce/skins/lightgray/skin.mobile.min.css';
+
 import 'tinymce/plugins/advlist/plugin.js';
 import 'tinymce/plugins/autolink/plugin.js';
 import 'tinymce/plugins/lists/plugin.js';
@@ -48,12 +55,22 @@ export default class Editor {
             menubar: false,
             themes: "inlite",
             statusbar: false,
+            skin: false,
             plugins: [
                 'advlist autolink lists link image charmap print preview anchor textcolor',
                 'searchreplace visualblocks code fullscreen',
                 'insertdatetime media table contextmenu paste code help wordcount'
             ],
             toolbar: 'insert |  formatselect | bold italic blockquote alignleft aligncenter alignright alignjustify bullist numlist outdent indent removeformat | code',
+            setup : function(ed)
+            {
+                ed.on('init', function() 
+                {
+                    this.getDoc().body.style.fontSize = '1rem';
+                    this.getDoc().body.style.fontFamily = 'Arial';
+                    this.getDoc().body.style.color = '#666';
+                });
+            },
         });
 
         tinymce.init({
@@ -67,7 +84,8 @@ export default class Editor {
             insert_toolbar: 'formatselect | bullist numlist outdent indent | quickimage quicktable media codesample',
             selection_toolbar: 'formatselect | bold italic quicklink blockquote alignleft aligncenter alignright alignjustify removeformat ',
             inline: true,
-            paste_data_images: true
+            paste_data_images: true,
+            skin: false,
         });
     }
 }

@@ -11,7 +11,7 @@
 
 import * as $ from 'jquery';
 import 'inputmask/dist/jquery.inputmask.bundle';
-
+import 'inputmask/dist/inputmask/bindings/inputmask.binding'
 /**
  * Class Mask
  *
@@ -20,6 +20,6 @@ import 'inputmask/dist/jquery.inputmask.bundle';
  */
 export default class Mask {
     constructor() {
-        $('[data-inputmask="*"]').inputmask({ "mask": "(999) 999-9999" });
+        
     }
 }

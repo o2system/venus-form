@@ -10,9 +10,8 @@
 // ------------------------------------------------------------------------
 
 // require("@babel/runtime");
-import "@babel/polyfill";
-import "@babel/register";
-import "webpack-hot-middleware/client?reload=true";
+// import "@babel/polyfill";
+// import "webpack-hot-middleware/client?reload=true";
 import UserInterface from 'o2system-venus-ui';
 import "./index.html";
 

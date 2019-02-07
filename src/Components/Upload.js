@@ -12,7 +12,6 @@
 import * as $ from 'jquery';
 import * as Dropzone from 'dropzone';
 import 'dropify/dist/js/dropify'
-import './Upload.scss';
 /**
  * Class Upload
  *
@@ -37,23 +36,24 @@ export default class Upload {
         if (typeof Dropzone != 'undefined') {
             var urlAction = $('[name="dropzone-url"]').val();
 
-            var previewNode = document.querySelector('#dropzone-preview');
-            previewNode.id = "";
-            var previewTemplate = previewNode.parentNode.innerHTML;
-            previewNode.parentNode.removeChild(previewNode);
+            var previewNode = $('#dropzone-preview');
+            previewNode.removeAttr('id');
+            var previewTemplate = previewNode.parent().html();
+            previewNode.parent().remove();
 
-            console.log(previewNode.parentNode);
-
-            var mediaDropzone = new Dropzone(document.querySelector(".dropzone-form"), { // Make the whole body a dropzone
+            var mediaDropzone = $(".dropzone-form").dropzone({
                 url: urlAction,
                 autoProcessQueue: true,
                 thumbnailWidth: null,
                 thumbnailHeight: null,
                 previewTemplate: previewTemplate, // Define the container to display the previews
                 //clickable: ".fileinput-button", // Define the element that should be used as click trigger to select files.
-            });
+             });
 
             mediaDropzone.on("addedfile", function (file) {
+                var fileId = 'media' + document.querySelectorAll('.media-list-item').length;
+                file.previewElement.getElementsByTagName('input')[0].setAttribute('id', fileId);
+                file.previewElement.getElementsByTagName('label')[0].setAttribute('for', fileId);
 
                 var imagesFileTypes = ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'];
                 if (imagesFileTypes.indexOf(file.type) != -1) {

@@ -24,22 +24,24 @@ module.exports = merge(common, {
 	},
 	output: {
 		filename: "[name].js",
-		path: path.resolve(process.cwd(), "dist"),
-		publicPath: "/"
+		path: path.resolve(process.cwd(), "dist")
+		// publicPath: "/"
 	},
 	module: {
-		rules: [{
-			test: /\.(sa|sc|c)ss$/,
-			use: [
-				MiniCssExtractPlugin.loader,
-				{
-					loader: "css-loader",
-					options: {importLoaders: 1, sourceMap: true},
-				},
-				'sass-loader',
+		rules: [
+			{
+				test: /\.(sa|sc|c)ss$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: "css-loader",
+						options: {importLoaders: 1, sourceMap: true},
+					},
+					'sass-loader',
 
-			],
-		}]
+				],
+			}
+		]
 	},
 
 	plugins: [

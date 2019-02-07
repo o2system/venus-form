@@ -1,13 +1,11 @@
-@import '../Core.scss';
 @import "~bootstrap-tagsinput/dist/bootstrap-tagsinput.css";
-
 /* Bootstrap tagsinput */
 .bootstrap-tagsinput {
     box-shadow: none;
     padding: 3px 7px 5px;
     width: 100%;
     line-height: 1;
-    border: 1px solid darken($input-border-color, 1%);
+    border: 1px solid darken($input-border-color, 1%); 
     display: flex;
     flex-wrap: wrap;
 

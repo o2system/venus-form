@@ -8,9 +8,7 @@
  * @copyright      Copyright (c) Steeve Andrian Salim
  */
 // ------------------------------------------------------------------------
-
 const path = require("path");
-const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require("html-webpack-plugin");
@@ -18,7 +16,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = merge(common, {
+module.exports = {
     mode: "development",
     entry: {
         "venus-form": "./src/main.dev.js"
@@ -32,21 +30,68 @@ module.exports = merge(common, {
         hot: true,
         open: true,
         historyApiFallback: true,
-        contentBase: "dev",
+        contentBase: "dist",
         overlay: true,
         stats: {
             colors: true
         }
     },
-    devtool: "source-map",
+    // devtool: "source-map",
     module: {
         rules: [
+            
+            {
+                test: /\.js$/,
+                use: [{
+                    loader: "babel-loader"
+                }],
+                exclude: /(node_modules|bower_components)/
+            },
+
+            // {
+            //     test: /tinymce[\\/]skins[\\/]/,
+            //     loader: 'file?name=[path][name].[ext]&context=node_modules/tinymce'
+            // },
+
+            {
+                test: /\.(jpg|jpeg|gif|png|webpm|svg)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "assets/img/[name].[ext]"
+                        }
+                    }
+                ]
+            },
+
+            {
+                test: /.(woff|woff2|ttf|eot)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "assets/webfonts/[name].[ext]"
+                        }
+                    }
+                ]
+            },
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
-                    { loader: "style-loader"},
-                    { loader: "css-loader"},
-                    
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: "css-loader",
+                        //options: { importLoaders: 2, sourceMap: true },
+                    },
+                    // {
+                    //     loader: 'postcss-loader',
+                    //     options: {
+                    //         config: {
+                    //             path: __dirname + '/postcss.config.js'
+                    //         }
+                    //     }
+                    // },
                     { loader: "sass-loader" },
                 ],
             },
@@ -58,6 +103,9 @@ module.exports = merge(common, {
             }
         ]
     },
+    // resolveLoader: {
+    //     moduleExtensions: ["-loader"]
+    // },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
@@ -71,4 +119,4 @@ module.exports = merge(common, {
             template: "./src/index.html"
         }), // Generates default index.html
     ]
-});
+};
