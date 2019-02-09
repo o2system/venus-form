@@ -8,7 +8,6 @@
  * @copyright      Copyright (c) Steeve Andrian Salim
  */
 // ------------------------------------------------------------------------
-import UserInterface from 'o2system-venus-ui';
 import Form from './Form';
 
 /**
