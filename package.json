@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "O2System Form Interface Framework",
   "homepage": "https://venus.o2system.id/form",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "npm run dev",
     "build": "webpack --config=config/webpack.build.js",
