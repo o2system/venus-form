@@ -37,16 +37,10 @@ export default class Upload {
             //Dropzone.autoDiscover = false;
 
             // Cards version
-<<<<<<< HEAD
             const dropzoneCards = $('#dropzone-cards');
             if(dropzoneCards.length) {
 
                 let dropzoneCardsActionUrl = dropzoneCards.data('action-url');
-=======
-            if($('#dropzone-cards').length) {
-                let dropzoneCardsElement = $('#dropzone-cards');
-                let dropzoneCardsActionUrl = dropzoneCardsElement.data('action-url');
->>>>>>> df8eb29131c877502f54faf83d32c263757a1ed8
 
                 let dropzoneCardsFilePreview = dropzoneCardsElement.find('#dropzone-cards-template');
                 dropzoneCardsFilePreview.removeAttr('id');
@@ -106,16 +100,10 @@ export default class Upload {
             }
 
             // Table version
-<<<<<<< HEAD
             const dropzoneTable = $('#dropzone-table');
             if(dropzoneTable.length) {
 
                 let dropzoneTableActionUrl = dropzoneTable.data('action-url');
-=======
-            if($('#dropzone-table').length) {
-                let dropzoneTableElement = $('#dropzone-table');
-                let dropzoneTableActionUrl = dropzoneTableElement.data('action-url');
->>>>>>> df8eb29131c877502f54faf83d32c263757a1ed8
 
                 let dropzoneTableFilePreview = dropzoneTableElement.find('#dropzone-table-template');
                 dropzoneTableFilePreview.removeAttr('id');
