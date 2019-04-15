@@ -34,19 +34,25 @@ export default class Upload {
 
     initDropzone() {
         if (typeof Dropzone != 'undefined') {
-            Dropzone.autoDiscover = false;
+            //Dropzone.autoDiscover = false;
 
             // Cards version
+<<<<<<< HEAD
             const dropzoneCards = $('#dropzone-cards');
             if(dropzoneCards.length) {
 
                 let dropzoneCardsActionUrl = dropzoneCards.data('action-url');
+=======
+            if($('#dropzone-cards').length) {
+                let dropzoneCardsElement = $('#dropzone-cards');
+                let dropzoneCardsActionUrl = dropzoneCardsElement.data('action-url');
+>>>>>>> df8eb29131c877502f54faf83d32c263757a1ed8
 
-                let dropzoneCardsFilePreview = dropzoneCards.find('#dropzone-cards-template');
+                let dropzoneCardsFilePreview = dropzoneCardsElement.find('#dropzone-cards-template');
                 dropzoneCardsFilePreview.removeAttr('id');
 
-                let dropzoneCardsFilePreviewTemplate = dropzoneCardsFilePreview.parentNode.innerHTML;
-                dropzoneCardsFilePreviewTemplate.parentNode.removeChild(dropzoneCardsFilePreview);
+                let dropzoneCardsFilePreviewTemplate = dropzoneCardsFilePreview.parent().html();
+                dropzoneCardsFilePreview.parent().remove();
 
                 let dropzoneCardForms = $('#dropzone-cards-form').dropzone({
                     url: dropzoneCardsActionUrl,
@@ -57,6 +63,7 @@ export default class Upload {
                 });
 
                 dropzoneCards.on("addedfile", function (file) {
+                    console.log('titit');
                     var fileId = 'media' + document.querySelectorAll('.media-list-item').length;
                     file.previewElement.getElementsByTagName('input')[0].setAttribute('id', fileId);
                     file.previewElement.getElementsByTagName('label')[0].setAttribute('for', fileId);
@@ -99,16 +106,22 @@ export default class Upload {
             }
 
             // Table version
+<<<<<<< HEAD
             const dropzoneTable = $('#dropzone-table');
             if(dropzoneTable.length) {
 
                 let dropzoneTableActionUrl = dropzoneTable.data('action-url');
+=======
+            if($('#dropzone-table').length) {
+                let dropzoneTableElement = $('#dropzone-table');
+                let dropzoneTableActionUrl = dropzoneTableElement.data('action-url');
+>>>>>>> df8eb29131c877502f54faf83d32c263757a1ed8
 
-                let dropzoneTableFilePreview = dropzoneTable.find('#dropzone-table-template');
+                let dropzoneTableFilePreview = dropzoneTableElement.find('#dropzone-table-template');
                 dropzoneTableFilePreview.removeAttr('id');
 
-                let dropzoneTableFilePreviewTemplate = dropzoneTableFilePreview.parentNode.innerHTML;
-                dropzoneTableFilePreviewTemplate.parentNode.removeChild(dropzoneTableFilePreview);
+                let dropzoneTableFilePreviewTemplate = dropzoneTableFilePreview.parent().html();
+                dropzoneTableFilePreview.parent().remove();
 
                 let dropzoneTable = $('#dropzone-table-form').dropzone({
                     url: dropzoneTableActionUrl,
@@ -116,12 +129,12 @@ export default class Upload {
                     thumbnailWidth: null,
                     thumbnailHeight: null,
                     previewTemplate: dropzoneTableFilePreviewTemplate, // Define the container to display the previews
-                    previewsContainer: '#dropzone-table',
+                    previewsContainer: ".media-list-table",
                     clickable: "#dropzone-add-file", // Define the element that should be used as click trigger to select files.
                 });
-
+                
                 dropzoneTable.on("addedfile", function (file) {
-
+                    console.log('test');
                     var imagesFileTypes = ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'];
                     if (imagesFileTypes.indexOf(file.type) != -1) {
                         file.previewElement.querySelector('.media-item-file-details').style.display = 'none';
@@ -145,7 +158,7 @@ export default class Upload {
                         file.previewElement.querySelector('.media-item-icon').innerHTML = '<i class="fas fa-file"></i>';
                     }
                     // Hookup the start button
-                    file.previewElement.querySelector(".start").onclick = function() { fileDropzone.enqueueFile(file); };
+                    file.previewElement.querySelector(".start").onclick = function() { dropzoneTable.enqueueFile(file); };
                 });
 
                 dropzoneTable.on("totaluploadprogress", function(progress) {
@@ -169,7 +182,7 @@ export default class Upload {
                     file.previewElement.querySelector(".media-item-file-extension").innerHTML = file.type;
                 });
 
-                fileDropzone.on("queuecomplete", function(progress) {
+                dropzoneTable.on("queuecomplete", function(progress) {
                     document.querySelector("#dropzone-table-total-progress").style.opacity = "0";
                 });
 
@@ -177,7 +190,7 @@ export default class Upload {
                 // The "add files" button doesn't need to be setup because the config
                 // `clickable` has already been specified.
                 document.querySelector("#dropzone-table-actions .start").onclick = function() {
-                    dropzoneTable.enqueueFiles(fileDropzone.getFilesWithStatus(Dropzone.ADDED));
+                    dropzoneTable.enqueueFiles(dropzoneTable.getFilesWithStatus(Dropzone.ADDED));
                 };
 
                 document.querySelector("#dropzone-table-actions .cancel").onclick = function() {
