@@ -48,11 +48,7 @@ export default class Upload {
                 let dropzoneCardsFilePreviewTemplate = dropzoneCardsFilePreview.parent().html();
                 dropzoneCardsFilePreview.parent().remove();
 
-<<<<<<< HEAD
                 let dropzoneCards = new Dropzone('#dropzone-cards-form', {
-=======
-                let dropzoneCardForms = $('#dropzone-cards-form').dropzone({
->>>>>>> 84f40ef6f93308c89dd599def41a82864d990f58
                     url: dropzoneCardsActionUrl,
                     autoProcessQueue: true,
                     thumbnailWidth: null,
