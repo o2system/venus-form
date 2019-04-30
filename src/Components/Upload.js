@@ -42,13 +42,13 @@ export default class Upload {
 
                 let dropzoneCardsActionUrl = dropzoneCards.data('action-url');
 
-                let dropzoneCardsFilePreview = dropzoneCardsElement.find('#dropzone-cards-template');
+                let dropzoneCardsFilePreview = dropzoneCards.find('#dropzone-cards-template');
                 dropzoneCardsFilePreview.removeAttr('id');
 
                 let dropzoneCardsFilePreviewTemplate = dropzoneCardsFilePreview.parent().html();
                 dropzoneCardsFilePreview.parent().remove();
 
-                let dropzoneCards = new Dropzone('#dropzone-cards-form', {
+                let dropzoneCardsForm = new Dropzone('#dropzone-cards-form', {
                     url: dropzoneCardsActionUrl,
                     autoProcessQueue: true,
                     thumbnailWidth: null,
@@ -56,7 +56,7 @@ export default class Upload {
                     previewTemplate: dropzoneCardsFilePreviewTemplate
                 });
 
-                dropzoneCards.on("addedfile", function (file) {
+                dropzoneCardsForm.on("addedfile", function (file) {
                     var fileId = 'media' + document.querySelectorAll('.media-list-item').length;
                     file.previewElement.getElementsByTagName('input')[0].setAttribute('id', fileId);
                     file.previewElement.getElementsByTagName('label')[0].setAttribute('for', fileId);
@@ -85,13 +85,13 @@ export default class Upload {
                     }
                 });
 
-                dropzoneCards.on("success", function (file, resp) {
+                dropzoneCardsForm.on("success", function (file, resp) {
                     file.previewElement.querySelector(".media-list-item").classList.remove('uploading');
                     file.previewElement.querySelector(".upload-progress").style.display = 'none';
                     file.previewElement.querySelector(".media-item-file-extension").innerHTML = file.type;
                 });
 
-                dropzoneCards.on("error", function (file) {
+                dropzoneCardsForm.on("error", function (file) {
                     file.previewElement.querySelector(".media-list-item").classList.remove('uploading');
                     file.previewElement.querySelector(".upload-progress").style.display = 'none';
                     file.previewElement.querySelector(".media-item-file-extension").innerHTML = file.type;
@@ -104,13 +104,13 @@ export default class Upload {
 
                 let dropzoneTableActionUrl = dropzoneTable.data('action-url');
 
-                let dropzoneTableFilePreview = dropzoneTableElement.find('#dropzone-table-template');
+                let dropzoneTableFilePreview = dropzoneTable.find('#dropzone-table-template');
                 dropzoneTableFilePreview.removeAttr('id');
 
                 let dropzoneTableFilePreviewTemplate = dropzoneTableFilePreview.parent().html();
                 dropzoneTableFilePreview.parent().remove();
 
-                let dropzoneTable = new Dropzone('#dropzone-table-form', {
+                let dropzoneTableForm = new Dropzone('#dropzone-table-form', {
                     url: dropzoneTableActionUrl,
                     autoProcessQueue: false,
                     thumbnailWidth: null,
@@ -120,7 +120,7 @@ export default class Upload {
                     clickable: "#dropzone-add-file", // Define the element that should be used as click trigger to select files.
                 });
                 
-                dropzoneTable.on("addedfile", function (file) {
+                dropzoneTableForm.on("addedfile", function (file) {
                     console.log('test');
                     var imagesFileTypes = ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'];
                     if (imagesFileTypes.indexOf(file.type) != -1) {
@@ -145,31 +145,31 @@ export default class Upload {
                         file.previewElement.querySelector('.media-item-icon').innerHTML = '<i class="fas fa-file"></i>';
                     }
                     // Hookup the start button
-                    file.previewElement.querySelector(".start").onclick = function() { dropzoneTable.enqueueFile(file); };
+                    file.previewElement.querySelector(".start").onclick = function() { dropzoneTableForm.enqueueFile(file); };
                 });
 
-                dropzoneTable.on("totaluploadprogress", function(progress) {
+                dropzoneTableForm.on("totaluploadprogress", function(progress) {
                     document.querySelector("#dropzone-table-total-progress .progress-bar").style.width = progress + "%";
                 });
 
-                dropzoneTable.on("sending", function(file) {
+                dropzoneTableForm.on("sending", function(file) {
                     // Show the total progress bar when upload starts
                     document.querySelector("#dropzone-table-total-progress").style.opacity = "1";
                     // And disable the start button
                     file.previewElement.querySelector(".start").setAttribute("disabled", "disabled");
                 });
 
-                dropzoneTable.on("success", function (file, resp) {
+                dropzoneTableForm.on("success", function (file, resp) {
                     file.previewElement.querySelector(".upload-progress").style.display = 'none';
                     file.previewElement.querySelector(".media-item-file-extension").innerHTML = file.type;
                 });
 
-                dropzoneTable.on("error", function (file) {
+                dropzoneTableForm.on("error", function (file) {
                     file.previewElement.querySelector(".upload-progress").style.display = 'none';
                     file.previewElement.querySelector(".media-item-file-extension").innerHTML = file.type;
                 });
 
-                dropzoneTable.on("queuecomplete", function(progress) {
+                dropzoneTableForm.on("queuecomplete", function(progress) {
                     document.querySelector("#dropzone-table-total-progress").style.opacity = "0";
                 });
 
@@ -177,11 +177,11 @@ export default class Upload {
                 // The "add files" button doesn't need to be setup because the config
                 // `clickable` has already been specified.
                 document.querySelector("#dropzone-table-actions .start").onclick = function() {
-                    dropzoneTable.enqueueFiles(dropzoneTable.getFilesWithStatus(Dropzone.ADDED));
+                    dropzoneTableForm.enqueueFiles(dropzoneTableForm.getFilesWithStatus(Dropzone.ADDED));
                 };
 
                 document.querySelector("#dropzone-table-actions .cancel").onclick = function() {
-                    dropzoneTable.removeAllFiles(true);
+                    dropzoneTableForm.removeAllFiles(true);
                 };
             }
         }
