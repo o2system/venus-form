@@ -34,7 +34,7 @@ export default class Upload {
 
     initDropzone() {
         if (typeof Dropzone != 'undefined') {
-            //Dropzone.autoDiscover = false;
+            Dropzone.autoDiscover = false;
 
             // Cards version
             if($('#dropzone-cards').length) {
@@ -47,7 +47,7 @@ export default class Upload {
                 let dropzoneCardsFilePreviewTemplate = dropzoneCardsFilePreview.parent().html();
                 dropzoneCardsFilePreview.parent().remove();
 
-                let dropzoneCards = $('#dropzone-cards-form').dropzone({
+                let dropzoneCards = new Dropzone('#dropzone-cards-form', {
                     url: dropzoneCardsActionUrl,
                     autoProcessQueue: true,
                     thumbnailWidth: null,
@@ -56,7 +56,6 @@ export default class Upload {
                 });
 
                 dropzoneCards.on("addedfile", function (file) {
-                    console.log('titit');
                     var fileId = 'media' + document.querySelectorAll('.media-list-item').length;
                     file.previewElement.getElementsByTagName('input')[0].setAttribute('id', fileId);
                     file.previewElement.getElementsByTagName('label')[0].setAttribute('for', fileId);
@@ -109,7 +108,7 @@ export default class Upload {
                 let dropzoneTableFilePreviewTemplate = dropzoneTableFilePreview.parent().html();
                 dropzoneTableFilePreview.parent().remove();
 
-                let dropzoneTable = $('#dropzone-table-form').dropzone({
+                let dropzoneTable = new Dropzone('#dropzone-table-form', {
                     url: dropzoneTableActionUrl,
                     autoProcessQueue: false,
                     thumbnailWidth: null,
