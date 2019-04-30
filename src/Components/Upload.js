@@ -37,9 +37,10 @@ export default class Upload {
             Dropzone.autoDiscover = false;
 
             // Cards version
-            if($('#dropzone-cards').length) {
-                let dropzoneCardsElement = $('#dropzone-cards');
-                let dropzoneCardsActionUrl = dropzoneCardsElement.data('action-url');
+            const dropzoneCards = $('#dropzone-cards');
+            if(dropzoneCards.length) {
+
+                let dropzoneCardsActionUrl = dropzoneCards.data('action-url');
 
                 let dropzoneCardsFilePreview = dropzoneCardsElement.find('#dropzone-cards-template');
                 dropzoneCardsFilePreview.removeAttr('id');
@@ -47,7 +48,11 @@ export default class Upload {
                 let dropzoneCardsFilePreviewTemplate = dropzoneCardsFilePreview.parent().html();
                 dropzoneCardsFilePreview.parent().remove();
 
+<<<<<<< HEAD
                 let dropzoneCards = new Dropzone('#dropzone-cards-form', {
+=======
+                let dropzoneCardForms = $('#dropzone-cards-form').dropzone({
+>>>>>>> 84f40ef6f93308c89dd599def41a82864d990f58
                     url: dropzoneCardsActionUrl,
                     autoProcessQueue: true,
                     thumbnailWidth: null,
@@ -98,9 +103,10 @@ export default class Upload {
             }
 
             // Table version
-            if($('#dropzone-table').length) {
-                let dropzoneTableElement = $('#dropzone-table');
-                let dropzoneTableActionUrl = dropzoneTableElement.data('action-url');
+            const dropzoneTable = $('#dropzone-table');
+            if(dropzoneTable.length) {
+
+                let dropzoneTableActionUrl = dropzoneTable.data('action-url');
 
                 let dropzoneTableFilePreview = dropzoneTableElement.find('#dropzone-table-template');
                 dropzoneTableFilePreview.removeAttr('id');
