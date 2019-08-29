@@ -1,1 +1,1786 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title> <%= htmlWebpackPlugin.title %> </title><link href="/venus-form/venus-form.css" rel="stylesheet"><link href="/venus-form/venus-form.min.css" rel="stylesheet"></head><body><div class="demo"><section class="banner bg-banner"><div class="banner-0"><div class="container"><div class="row"><div class="col-lg-12 text-center text-light"><img src="/venus-form/assets/img/logo-venus-white.png" alt="" height="200"><h1 class="font-weight-bold my-3 text-uppercase">Venus Form Kit</h1><h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3><h5>By O2System Framework</h5></div></div></div></div></section><section><div class="container"><div class="title"><h2 class="font-weight-bold">Form Basic</h2></div><h4 class="mb-3">Input Type</h4><p class="text-muted">Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p><div class="row"><div class="col-12"><div><form class="form-horizontal" role="form"><div class="form-group row"><label class="col-2 col-form-label">Text</label><div class="col-10"><input class="form-control" value="Some text value..."></div></div><div class="form-group row"><label class="col-2 col-form-label" for="example-email">Email</label><div class="col-10"><input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email"></div></div><div class="form-group row"><label class="col-2 col-form-label">Password</label><div class="col-10"><input type="password" class="form-control" value="password"></div></div><div class="form-group row"><label class="col-2 col-form-label">Placeholder</label><div class="col-10"><input class="form-control" placeholder="placeholder"></div></div><div class="form-group row"><label class="col-2 col-form-label">Text area</label><div class="col-10"><textarea class="form-control" rows="5"></textarea></div></div><div class="form-group row"><label class="col-2 col-form-label">Readonly</label><div class="col-10"><input class="form-control" readonly="" value="Readonly value"></div></div><div class="form-group row"><label class="col-2 col-form-label">Disabled</label><div class="col-10"><input class="form-control" disabled="" value="Disabled value"></div></div><div class="form-group row"><label class="col-2 col-form-label">Static control</label><div class="col-10"><p class="form-control-static">email@example.com</p></div></div><div class="form-group row"><label class="col-2 col-form-label">Helping text</label><div class="col-10"><input class="form-control" placeholder="Helping text"> <span class="help-block"><small>A block of help text that breaks onto a new line and may extend beyond one line.</small></span></div></div><div class="form-group row"><label class="col-2 col-form-label">Input Select</label><div class="col-10"><select class="form-control"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><h6>Multiple select</h6><select multiple="multiple" class="form-control"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div></div><div class="form-group row"><label class="col-2 col-form-label">Default file input</label><div class="col-10"><input type="file" class="form-control"></div></div><div class="form-group row"><label class="col-2 col-form-label">Date</label><div class="col-10"><input class="form-control" type="date" name="date"></div></div><div class="form-group row"><label class="col-2 col-form-label">Month</label><div class="col-md-10"><input class="form-control" type="month" name="month"></div></div><div class="form-group row"><label class="col-2 col-form-label">Time</label><div class="col-md-10"><input class="form-control" type="time" name="time"></div></div><div class="form-group row"><label class="col-2 col-form-label">Week</label><div class="col-md-10"><input class="form-control" type="week" name="week"></div></div><div class="form-group row"><label class="col-2 col-form-label">Number</label><div class="col-md-10"><input class="form-control" type="number" name="number"></div></div><div class="form-group row"><label class="col-2 col-form-label">URL</label><div class="col-md-10"><input class="form-control" type="url" name="url"></div></div><div class="form-group row"><label class="col-2 col-form-label">Search</label><div class="col-md-10"><input class="form-control" type="search" name="search"></div></div><div class="form-group row"><label class="col-2 col-form-label">Tel</label><div class="col-md-10"><input class="form-control" type="tel" name="tel"></div></div><div class="form-group row"><label class="col-2 col-form-label">Color</label><div class="col-md-10"><input class="form-control" type="color" name="color"></div></div><div class="form-group row"><label class="col-2 col-form-label">Range</label><div class="col-md-10"><input class="form-control" type="range" name="range" min="0" max="10"></div></div></form></div></div></div><div class="row"><div class="col-md-6"><h4 class="mb-3">Select menu</h4><p class="text-muted">Custom <code class="highlighter-rouge">&lt;select&gt;</code> menus need only a custom class, <code class="highlighter-rouge">.custom-select</code> to trigger the custom styles.</p><select class="custom-select"><option selected="selected">Open this select menu</option><option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select></div><div class="col-md-6"><h4 class="mb-3">Checkboxes and radios</h4><div><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label></div><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"> <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label></div></div><div class="mt-3"><div class="custom-control custom-radio"><input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"> <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label></div><div class="custom-control custom-radio"><input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"> <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label></div></div></div></div></div></section><section><div class="container"><div class="title"><h2 class="font-weight-bold">Form Advanced</h2></div><div class="row"><div class="col-md-6"><h4 class="mb-3">Select2</h4><p class="text-muted">Single Select</p><p class="text-muted">Select2 can take a regular select box like this...</p><select class="form-control select-with-search"><option>Select</option><optgroup label="Alaskan/Hawaiian Time Zone"><option value="AK">Alaska</option><option value="HI">Hawaii</option></optgroup><optgroup label="Pacific Time Zone"><option value="CA">California</option><option value="NV">Nevada</option><option value="OR">Oregon</option><option value="WA">Washington</option></optgroup><optgroup label="Mountain Time Zone"><option value="AZ">Arizona</option><option value="CO">Colorado</option><option value="ID">Idaho</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NM">New Mexico</option><option value="ND">North Dakota</option><option value="UT">Utah</option><option value="WY">Wyoming</option></optgroup><optgroup label="Central Time Zone"><option value="AL">Alabama</option><option value="AR">Arkansas</option><option value="IL">Illinois</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="OK">Oklahoma</option><option value="SD">South Dakota</option><option value="TX">Texas</option><option value="TN">Tennessee</option><option value="WI">Wisconsin</option></optgroup><optgroup label="Eastern Time Zone"><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="IN">Indiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="OH">Ohio</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WV">West Virginia</option></optgroup></select><p class="text-muted mt-3">Multiple Select</p><p class="text-muted">Select2 can take a regular select box like this...</p><select class="select2 form-control select-with-search" multiple="multiple" multiple="multiple" data-placeholder="Choose ..."><optgroup label="Alaskan/Hawaiian Time Zone"><option value="AK">Alaska</option><option value="HI">Hawaii</option></optgroup><optgroup label="Pacific Time Zone"><option value="CA">California</option><option value="NV">Nevada</option><option value="OR">Oregon</option><option value="WA">Washington</option></optgroup><optgroup label="Mountain Time Zone"><option value="AZ">Arizona</option><option value="CO">Colorado</option><option value="ID">Idaho</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NM">New Mexico</option><option value="ND">North Dakota</option><option value="UT">Utah</option><option value="WY">Wyoming</option></optgroup><optgroup label="Central Time Zone"><option value="AL">Alabama</option><option value="AR">Arkansas</option><option value="IL">Illinois</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="OK">Oklahoma</option><option value="SD">South Dakota</option><option value="TX">Texas</option><option value="TN">Tennessee</option><option value="WI">Wisconsin</option></optgroup><optgroup label="Eastern Time Zone"><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="IN">Indiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="OH">Ohio</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WV">West Virginia</option></optgroup></select></div><div class="col-md-6"><h4 class="mb-3">Tags Input</h4><p class="text-muted font-weight-bold">Input Tags</p><p class="text-muted">Just add <code>data-role="tagsinput"</code> to your input field to automatically change it to a tags input field.</p><div class="tags-default"><input value="Amsterdam,Washington,Sydney" data-role="tagsinput" placeholder="add tags"></div><p class="mt-3 font-weight-bold text-muted">True multi value</p><p class="text-muted">Use a <code>&lt;select multiple /&gt;</code> as your input element for a tags input, to gain true multivalue support. Instead of a comma separated string, the values will be set in an array. Existing <code>&lt;option /&gt;</code> elements will automatically be set as tags. This makes it also possible to create tags containing a comma.</p><div class="m-b-0"><select multiple="multiple" data-role="tagsinput"><option value="Amsterdam">Amsterdam</option><option value="Washington">Washington</option><option value="Sydney">Sydney</option><option value="Beijing">Beijing</option><option value="Cairo">Cairo</option></select></div></div></div></div></section><section><div class="container"><div class="title"><h2 class="font-weight-bold">Form Mask</h2></div><div class="row"><div class="col-md-6"><h4 class="mb-3">Input Masks</h4><p class="text-muted">Your awesome text goes here.Your awesome text goes here.</p><form action="#"><div class="form-group"><label>ISBN 1</label> <input placeholder="" data-inputmask="'mask' : '999-99-999-9999-9'" class="form-control"> <span class="text-muted">e.g "999-99-999-9999-9"</span></div><div class="form-group"><label>ISBN 2</label> <input placeholder="" data-inputmask="'mask' : '999 99 999 9999 9'" class="form-control"> <span class="text-muted">999 99 999 9999 9</span></div><div class="form-group"><label>ISBN 3</label> <input placeholder="" data-inputmask="'mask' : '999/99/999/9999/9'" class="form-control"> <span class="text-muted">999/99/999/9999/9</span></div><div class="form-group"><label>IPV4</label> <input placeholder="" data-inputmask="'mask' : '999.999.999.999'" class="form-control"> <span class="text-muted">192.168.110.310</span></div><div class="form-group m-b-0"><label>IPV6</label> <input placeholder="" data-inputmask="'mask' : '9999:9999:9999:9:999:9999:9999:9999'" class="form-control"> <span class="text-muted">4deg:1340:6547:2:540:h8je:ve73:98pd</span></div></form></div><div class="col-md-6"><h4 class="mb-3">Input Masks</h4><p class="text-muted">Your awesome text goes here.Your awesome text goes here.</p><form action="#"><div class="form-group"><label>Tax ID</label> <input placeholder="" data-inputmask="'mask' : '99-9999999'" class="form-control"> <span class="text-muted">99-9999999</span></div><div class="form-group"><label>Phone</label> <input placeholder="" data-inputmask="'mask' : '(999) 999-9999'" class="form-control"> <span class="text-muted">(999) 999-9999</span></div><div class="form-group"><label>Currency</label> <input placeholder="" data-inputmask="'mask' : '$ 999,999,999.99'" class="form-control"> <span class="text-muted">$ 999,999,999.99</span></div><div class="form-group"><label>Date</label> <input placeholder="" data-inputmask="'mask' : '99/99/9999'" class="form-control"> <span class="text-muted">dd/mm/yyyy</span></div><div class="form-group m-b-0"><label>Date 2</label> <input placeholder="" data-inputmask="'mask' : '99-99-9999'" class="form-control"> <span class="text-muted">dd-mm-yyyy</span></div></form></div></div></div></section><section><div class="container"><div class="title"><h2 class="font-weight-bold">Form Pickers</h2></div><div class="row"><div class="col-md-12"><h4 class="mb-3">Colorpicker</h4><p>Bootstrap Colorpicker is a modular color picker plugin for Bootstrap 4.</p><div class="form-group"><input class="form-control color-picker"></div></div></div><div class="row"><div class="col-md-6"><h4 class="mb-3">Timepicker</h4><p class="text-muted">Easily select a time for a text input using your mouse or keyboards arrow keys.</p><div class="form-group"><label>Default Time Picker</label><div class="input-group"><input class="form-control timepicker"><div class="input-group-append"><span class="input-group-text"><i class="fas fa-clock"></i></span></div></div></div><div class="form-group"><label>24 Hour Mode Time Picker</label><div class="input-group"><input class="form-control timepicker-24"><div class="input-group-append"><span class="input-group-text"><i class="fas fa-clock"></i></span></div></div></div><div class="form-group"><label>Specify a step for the minute field</label><div class="input-group"><input class="form-control timepicker-step"><div class="input-group-append"><span class="input-group-text"><i class="fas fa-clock"></i></span></div></div></div></div><div class="col-md-6"><h4 class="mb-3">Date Range Picker</h4><p class="text-muted">A JavaScript component for choosing date ranges. Designed to work with the Bootstrap CSS framework.</p><form><div class="form-group"><label>With all options</label> <input class="form-control reportrange"></div><div class="form-group"><label>Date Range Pick</label><div><input class="form-control input-daterange-datepicker" name="daterange" value="01/01/2017 - 01/31/2018"></div></div><div class="form-group"><label>Date Range With Time</label><div><input class="form-control input-daterange-timepicker" name="daterange" value="01/01/2017 1:30 PM - 01/01/2017 2:00 PM"></div></div><div class="form-group"><label>Limit Selectable Dates</label><div><input class="form-control input-limit-datepicker" name="daterange" value="06/01/2017 - 06/07/2017"></div></div></form></div></div><div class="row"><div class="col-md-12"><h4 class="mb-3">Date Picker</h4><p class="text-muted">The datepicker is tied to a standard form input field. Click on the input to open an interactive calendar in a small overlay. Click elsewhere on the page or hit the Esc key to close. If a date is chosen, feedback is shown as the input's value.</p><form action="#"><div class="row"><div class="col-lg-8"><div class="form-group"><label>Default Functionality</label><div><div class="input-group"><input class="form-control datepicker" placeholder="mm/dd/yyyy"><div class="input-group-append"><span class="input-group-text"><i class="fas fa-calendar"></i></span></div></div></div></div><div class="form-group"><label>Auto Close</label><div><div class="input-group"><input class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"><div class="input-group-append"><span class="input-group-text"><i class="fas fa-calendar"></i></span></div></div></div></div><div class="form-group"><label>Multiple Date</label><div><div class="input-group"><input class="form-control datepicker-multiple-date" placeholder="mm/dd/yyyy"><div class="input-group-append"><span class="input-group-text"><i class="fas fa-calendar"></i></span></div></div></div></div><div class="form-group"><label>Date Range</label><div><div class="input-daterange input-group date-range" id="date-range"><input class="form-control" name="start"> <input class="form-control" name="end"></div></div></div></div><div class="col-lg-4"><label>Display Inline</label><div class="center-block" style="margin: 10px auto"><div class="datepicker-inline"></div></div></div></div></form></div></div></div></section><section><div class="container"><div class="title"><h2 class="font-weight-bold">Form Validation</h2></div><div class="row"><div class="col-md-6"><h4 class="mb-3">Basic Form</h4><p class="text-muted">Parsley is a javascript form validation library. It helps you provide your users with feedback on their form submission before sending it to your server.</p><form action="#" class="form-validation"><div class="form-group"><label for="userName">User Name<span class="text-danger">*</span></label> <input name="nick" parsley-trigger="change" required placeholder="Enter user name" class="form-control" id="userName"></div><div class="form-group"><label for="emailAddress">Email address<span class="text-danger">*</span></label> <input type="email" name="email" parsley-trigger="change" required placeholder="Enter email" class="form-control" id="emailAddress"></div><div class="form-group"><label for="pass1">Password<span class="text-danger">*</span></label> <input id="pass1" type="password" placeholder="Password" required class="form-control"></div><div class="form-group"><label for="passWord2">Confirm Password <span class="text-danger">*</span></label> <input data-parsley-equalto="#pass1" type="password" required placeholder="Password" class="form-control" id="passWord2"></div><div class="form-group"><div class="checkbox checkbox-purple"><input id="checkbox6a" type="checkbox"> <label for="checkbox6a">Remember me</label></div></div><div class="form-group text-right m-b-0"><button class="btn btn-primary" type="submit">Submit</button> <button type="reset" class="btn btn-light">Cancel</button></div></form></div><div class="col-md-6"><h4 class="mb-3">Horizontal Form</h4><p class="text-muted">Parsley is a javascript form validation library. It helps you provide your users with feedback on their form submission before sending it to your server.</p><form role="form" class="form-validation"><div class="form-group row"><label for="inputEmail3" class="col-4 col-form-label">Email<span class="text-danger">*</span></label><div class="col-7"><input type="email" required parsley-type="email" class="form-control" id="inputEmail3" placeholder="Email"></div></div><div class="form-group row"><label for="hori-pass1" class="col-4 col-form-label">Password<span class="text-danger">*</span></label><div class="col-7"><input id="hori-pass1" type="password" placeholder="Password" required class="form-control"></div></div><div class="form-group row"><label for="hori-pass2" class="col-4 col-form-label">Confirm Password <span class="text-danger">*</span></label><div class="col-7"><input data-parsley-equalto="#hori-pass1" type="password" required placeholder="Password" class="form-control" id="hori-pass2"></div></div><div class="form-group row"><label for="webSite" class="col-4 col-form-label">Web Site<span class="text-danger">*</span></label><div class="col-7"><input type="url" required parsley-type="url" class="form-control" id="webSite" placeholder="URL"></div></div><div class="form-group row"><div class="col-8 offset-4"><div class="checkbox checkbox-purple"><input id="checkbox6" type="checkbox"> <label for="checkbox6">Remember me</label></div></div></div><div class="form-group row"><div class="col-8 offset-4"><button type="submit" class="btn btn-primary">Register</button> <button type="reset" class="btn btn-light">Cancel</button></div></div></form></div><div class="col-md-6"><h4 class="mb-3">Validation type</h4><p class="text-muted">Parsley is a javascript form validation library. It helps you provide your users with feedback on their form submission before sending it to your server.</p><form class="form-validation" action="#"><div class="form-group"><label>Required</label> <input class="form-control" required placeholder="Type something"></div><div class="form-group"><label>Equal To</label><div><input type="password" id="pass2" class="form-control" required placeholder="Password"></div><div class="mt-2"><input type="password" class="form-control" required data-parsley-equalto="#pass2" placeholder="Re-Type Password"></div></div><div class="form-group"><label>E-Mail</label><div><input type="email" class="form-control" required parsley-type="email" placeholder="Enter a valid e-mail"></div></div><div class="form-group"><label>URL</label><div><input parsley-type="url" type="url" class="form-control" required placeholder="URL"></div></div><div class="form-group"><label>Digits</label><div><input data-parsley-type="digits" class="form-control" required placeholder="Enter only digits"></div></div><div class="form-group"><label>Number</label><div><input data-parsley-type="number" class="form-control" required placeholder="Enter only numbers"></div></div><div class="form-group"><label>Alphanumeric</label><div><input data-parsley-type="alphanum" class="form-control" required placeholder="Enter alphanumeric value"></div></div><div class="form-group"><label>Textarea</label><div><textarea required class="form-control"></textarea></div></div><div class="form-group"><div><button type="submit" class="btn btn-primary">Submit</button> <button type="reset" class="btn btn-light">Cancel</button></div></div></form></div><div class="col-md-6"><h4 class="mb-3">Range validation</h4><p class="text-muted">Parsley is a javascript form validation library. It helps you provide your users with feedback on their form submission before sending it to your server.</p><form action="#" class="form-validation"><div class="form-group"><label>Min Length</label><div><input class="form-control" required data-parsley-minlength="6" placeholder="Min 6 chars."></div></div><div class="form-group"><label>Max Length</label><div><input class="form-control" required data-parsley-maxlength="6" placeholder="Max 6 chars."></div></div><div class="form-group"><label>Range Length</label><div><input class="form-control" required data-parsley-length="[5,10]" placeholder="Text between 5 - 10 chars length"></div></div><div class="form-group"><label>Min Value</label><div><input class="form-control" required data-parsley-min="6" placeholder="Min value is 6"></div></div><div class="form-group"><label>Max Value</label><div><input class="form-control" required data-parsley-max="6" placeholder="Max value is 6"></div></div><div class="form-group"><label>Range Value</label><div><input class="form-control" required min="6" max="100" placeholder="Number between 6 - 100"></div></div><div class="form-group"><label>Regular Exp</label><div><input class="form-control" required data-parsley-pattern="#[A-Fa-f0-9]{6}" placeholder="Hex. Color"></div></div><div class="form-group m-b-0"><div><button type="submit" class="btn btn-primary">Submit</button> <button type="reset" class="btn btn-light">Cancel</button></div></div></form></div></div></div></section><section><div class="container"><div class="title"><h2 class="font-weight-bold">Form Wizard</h2></div><div class="row"><div class="col-md-12"><div class="card mb-2"><div class="card-header">Step Wizard</div><div class="card-body wizard-content"><h6 class="card-subtitle">You can find the <a href="http://www.jquery-steps.com" target="_blank">offical website</a></h6><form action="#" class="tab-wizard wizard-circle"><h6>Personal Info</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="firstName1">First Name :</label> <input class="form-control" id="firstName1"></div></div><div class="col-md-6"><div class="form-group"><label for="lastName1">Last Name :</label> <input class="form-control" id="lastName1"></div></div></div><div class="row"><div class="col-md-6"><div class="form-group"><label for="emailAddress1">Email Address :</label> <input type="email" class="form-control" id="emailAddress1"></div></div><div class="col-md-6"><div class="form-group"><label for="phoneNumber1">Phone Number :</label> <input type="tel" class="form-control" id="phoneNumber1"></div></div></div><div class="row"><div class="col-md-6"><div class="form-group"><label for="location1">Select City :</label> <select class="custom-select form-control" id="location1" name="location"><option value="">Select City</option><option value="Amsterdam">India</option><option value="Berlin">USA</option><option value="Frankfurt">Dubai</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="date1">Date of Birth :</label> <input type="date" class="form-control" id="date1"></div></div></div></section><h6>Job Status</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="jobTitle1">Job Title :</label> <input class="form-control" id="jobTitle1"></div></div><div class="col-md-6"><div class="form-group"><label for="videoUrl1">Company Name :</label> <input class="form-control" id="videoUrl1"></div></div><div class="col-md-12"><div class="form-group"><label for="shortDescription1">Job Description :</label> <textarea name="shortDescription" id="shortDescription1" rows="6" class="form-control"></textarea></div></div></div></section><h6>Interview</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="int1">Interview For :</label> <input class="form-control" id="int1"></div><div class="form-group"><label for="intType1">Interview Type :</label> <select class="custom-select form-control" id="intType1" data-placeholder="Type to search cities" name="intType1"><option value="Banquet">Normal</option><option value="Fund Raiser">Difficult</option><option value="Dinner Party">Hard</option></select></div><div class="form-group"><label for="Location1">Location :</label> <select class="custom-select form-control" id="Location1" name="location"><option value="">Select City</option><option value="India">India</option><option value="USA">USA</option><option value="Dubai">Dubai</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="jobTitle2">Interview Date :</label> <input type="date" class="form-control" id="jobTitle2"></div><div class="form-group"><label>Requirements :</label><div class="c-inputs-stacked"><label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">Employee</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">Contract</span></label></div></div></div></div></section><h6>Remark</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="behName1">Behaviour :</label> <input class="form-control" id="behName1"></div><div class="form-group"><label for="participants1">Confidance</label> <input class="form-control" id="participants1"></div><div class="form-group"><label for="participants1">Result</label> <select class="custom-select form-control" id="participants1" name="location"><option value="">Select Result</option><option value="Selected">Selected</option><option value="Rejected">Rejected</option><option value="Call Second-time">Call Second-time</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="decisions1">Comments</label> <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea></div><div class="form-group"><label>Rate Interviwer :</label><div class="c-inputs-stacked"><label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">1 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">2 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">3 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">4 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">5 star</span></label></div></div></div></div></section></form></div></div></div></div><div class="row" id="validation"><div class="col-md-12"><div class="card mb-2"><div class="card-header">Step Wizard with Validation</div><div class="card-body wizard-content"><h6 class="card-subtitle">You can us the validation like what we did</h6><form action="#" class="validation-wizard wizard-circle"><h6>Step 1</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="wfirstName2">First Name : <span class="danger">*</span></label> <input class="form-control required" id="wfirstName2" name="firstName"></div></div><div class="col-md-6"><div class="form-group"><label for="wlastName2">Last Name : <span class="danger">*</span></label> <input class="form-control required" id="wlastName2" name="lastName"></div></div></div><div class="row"><div class="col-md-6"><div class="form-group"><label for="wemailAddress2">Email Address : <span class="danger">*</span></label> <input type="email" class="form-control required" id="wemailAddress2" name="emailAddress"></div></div><div class="col-md-6"><div class="form-group"><label for="wphoneNumber2">Phone Number :</label> <input type="tel" class="form-control" id="wphoneNumber2"></div></div></div><div class="row"><div class="col-md-6"><div class="form-group"><label for="wlocation2">Select City : <span class="danger">*</span></label> <select class="custom-select form-control required" id="wlocation2" name="location"><option value="">Select City</option><option value="India">India</option><option value="USA">USA</option><option value="Dubai">Dubai</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="wdate2">Date of Birth :</label> <input type="date" class="form-control" id="wdate2"></div></div></div></section><h6>Step 2</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="jobTitle2">Company Name :</label> <input class="form-control required" id="jobTitle2"></div></div><div class="col-md-6"><div class="form-group"><label for="webUrl3">Company URL :</label> <input type="url" class="form-control required" id="webUrl3" name="webUrl3"></div></div><div class="col-md-12"><div class="form-group"><label for="shortDescription3">Short Description :</label> <textarea name="shortDescription" id="shortDescription3" rows="6" class="form-control"></textarea></div></div></div></section><h6>Step 3</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="wint1">Interview For :</label> <input class="form-control required" id="wint1"></div><div class="form-group"><label for="wintType1">Interview Type :</label> <select class="custom-select form-control required" id="wintType1" data-placeholder="Type to search cities" name="wintType1"><option value="Banquet">Normal</option><option value="Fund Raiser">Difficult</option><option value="Dinner Party">Hard</option></select></div><div class="form-group"><label for="wLocation1">Location :</label> <select class="custom-select form-control required" id="wLocation1" name="wlocation"><option value="">Select City</option><option value="India">India</option><option value="USA">USA</option><option value="Dubai">Dubai</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="wjobTitle2">Interview Date :</label> <input type="date" class="form-control required" id="wjobTitle2"></div><div class="form-group"><label>Requirements :</label><div class="c-inputs-stacked"><label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">Employee</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">Contract</span></label></div></div></div></div></section><h6>Step 4</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="behName1">Behaviour :</label> <input class="form-control required" id="behName1"></div><div class="form-group"><label for="participants1">Confidance</label> <input class="form-control required" id="participants1"></div><div class="form-group"><label for="participants1">Result</label> <select class="custom-select form-control required" id="participants1" name="location"><option value="">Select Result</option><option value="Selected">Selected</option><option value="Rejected">Rejected</option><option value="Call Second-time">Call Second-time</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="decisions1">Comments</label> <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea></div><div class="form-group"><label>Rate Interviwer :</label><div class="c-inputs-stacked"><label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">1 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">2 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">3 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">4 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">5 star</span></label></div></div></div></div></section></form></div></div></div></div><div class="row"><div class="col-md-12"><div class="card mb-2"><div class="card-header">Step Wizard Vertical</div><div class="card-body wizard-content"><h6 class="card-subtitle">You can find the <a href="http://www.jquery-steps.com" target="_blank">offical website</a></h6><form action="#" class="tab-wizard vertical wizard-circle"><h6>Personal Info</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="firstName1">First Name :</label> <input class="form-control" id="firstName1"></div></div><div class="col-md-6"><div class="form-group"><label for="lastName1">Last Name :</label> <input class="form-control" id="lastName1"></div></div></div><div class="row"><div class="col-md-6"><div class="form-group"><label for="emailAddress1">Email Address :</label> <input type="email" class="form-control" id="emailAddress1"></div></div><div class="col-md-6"><div class="form-group"><label for="phoneNumber1">Phone Number :</label> <input type="tel" class="form-control" id="phoneNumber1"></div></div></div><div class="row"><div class="col-md-6"><div class="form-group"><label for="location1">Select City :</label> <select class="custom-select form-control" id="location1" name="location"><option value="">Select City</option><option value="Amsterdam">India</option><option value="Berlin">USA</option><option value="Frankfurt">Dubai</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="date1">Date of Birth :</label> <input type="date" class="form-control" id="date1"></div></div></div></section><h6>Job Status</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="jobTitle1">Job Title :</label> <input class="form-control" id="jobTitle1"></div></div><div class="col-md-6"><div class="form-group"><label for="videoUrl1">Company Name :</label> <input class="form-control" id="videoUrl1"></div></div><div class="col-md-12"><div class="form-group"><label for="shortDescription1">Job Description :</label> <textarea name="shortDescription" id="shortDescription1" rows="6" class="form-control"></textarea></div></div></div></section><h6>Interview</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="int1">Interview For :</label> <input class="form-control" id="int1"></div><div class="form-group"><label for="intType1">Interview Type :</label> <select class="custom-select form-control" id="intType1" data-placeholder="Type to search cities" name="intType1"><option value="Banquet">Normal</option><option value="Fund Raiser">Difficult</option><option value="Dinner Party">Hard</option></select></div><div class="form-group"><label for="Location1">Location :</label> <select class="custom-select form-control" id="Location1" name="location"><option value="">Select City</option><option value="India">India</option><option value="USA">USA</option><option value="Dubai">Dubai</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="jobTitle2">Interview Date :</label> <input type="date" class="form-control" id="jobTitle2"></div><div class="form-group"><label>Requirements :</label><div class="c-inputs-stacked"><label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">Employee</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">Contract</span></label></div></div></div></div></section><h6>Remark</h6><section><div class="row"><div class="col-md-6"><div class="form-group"><label for="behName1">Behaviour :</label> <input class="form-control" id="behName1"></div><div class="form-group"><label for="participants1">Confidance</label> <input class="form-control" id="participants1"></div><div class="form-group"><label for="participants1">Result</label> <select class="custom-select form-control" id="participants1" name="location"><option value="">Select Result</option><option value="Selected">Selected</option><option value="Rejected">Rejected</option><option value="Call Second-time">Call Second-time</option></select></div></div><div class="col-md-6"><div class="form-group"><label for="decisions1">Comments</label> <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea></div><div class="form-group"><label>Rate Interviwer :</label><div class="c-inputs-stacked"><label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">1 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">2 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">3 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">4 star</span></label> <label class="inline custom-control custom-checkbox block"><input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">5 star</span></label></div></div></div></div></section></form></div></div></div></div></div></section><section><div class="container"><div class="title"><h2 class="font-weight-bold">Form Upload</h2></div><div class="row"><div class="col-12"><div class="card mb-2"><div class="card-body"><form><input type="hidden" value="http://localhost:8080/" name="dropzone-url"><div class="media-list"><div class="dropzone-form" style="cursor: pointer;"><div class="dz-message needsclick"><p>Drop files here or click to upload.<br><span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span></p></div><div class="dropzone-previews" id="dropzone-previews"><div class="dz-template" id="dropzone-preview"><div class="media-list-item uploading"><div class="media-list-action d-flex"><button type="button" class="btn btn-info btn-xs btn-edit mr-2" data-toggle="modal" data-target="#modal-edit">Edit</button> <button type="button" class="btn btn-danger btn-xs"><i class="fas fa-trash"></i></button></div><input type="checkbox" id="media-1"> <label class="media-item" for="media-1"><img data-dz-thumbnail><div class="media-item-file-details"><div class="media-item-icon"><i class="fas fa-file-powerpoint"></i></div><div class="media-item-file-name" data-dz-name></div><div class="media-item-file-extension"></div></div></label><div class="upload-progress"><div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%" data-dz-uploadprogress></div></div></div><div class="media-item-file-error"><div class="media-item-icon-error"><i class="fas fa-exclamation-circle"></i></div><div class="media-item-file-name-error" data-dz-errormessage></div><div class="media-item-file-extension-error d-flex justify-content-center"><button type="button" class="btn btn-outline-light btn-sm" data-dz-remove><i class="fas fa-trash"></i></button></div></div></div></div></div></div></div></form></div></div></div></div></div></section><section><div class="container"><div class="title"><h2 class="font-weight-bold">Form Editor</h2></div><div class="row"><div class="col-12"><div class="card mb-2"><div class="card-body"><p class="text-muted">Full Editor</p><form><textarea class="form-control tinymce"></textarea></form></div></div><div class="card mb-2"><div class="card-body"><p class="text-muted">Inline Editor</p><div class="tinymce-inline"><h3>Your content goes here</h3></div></div></div></div></div></div></section></div><script src="/venus-form/venus-form.js"></script><script src="/venus-form/venus-form.min.js"></script></body></html>
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>O2System Venus Form UI</title>
+<link href=".//venus-form-ui.css?1d2fc0e2ee685fc1350b" rel="stylesheet"></head>
+
+<body>
+    <div class="demo">
+        <section class="banner bg-banner">
+            <div class="banner-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center text-light">
+                            <img src="./assets/img/logo-venus-white.png?0931e310f1f2229b0059baa661d39606" alt="" height="200">
+                            <h1 class="font-weight-bold my-3 text-uppercase">Venus Form Kit</h1>
+                            <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+                            <h5>By O2System Framework</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Basic</h2>
+                </div>
+
+                <h4 class="mb-3">Input Type</h4>
+                <p class="text-muted">
+                    Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>,
+                    <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>,
+                    <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.
+                </p>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Text</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" value="Some text value...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label" for="example-email">Email</label>
+                                    <div class="col-10">
+                                        <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Password</label>
+                                    <div class="col-10">
+                                        <input type="password" class="form-control" value="password">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Placeholder</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" placeholder="placeholder">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Text area</label>
+                                    <div class="col-10">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Readonly</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" readonly="" value="Readonly value">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Disabled</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" disabled="" value="Disabled value">
+                                    </div>
+                                </div>
+                
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Static control</label>
+                                    <div class="col-10">
+                                        <p class="form-control-static">email@example.com</p>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Helping text</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" placeholder="Helping text">
+                                        <span class="help-block"><small>A block of help text that breaks onto a new line and may extend
+                                                beyond one line.</small></span>
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Input Select</label>
+                                    <div class="col-10">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                        <h6>Multiple select</h6>
+                                        <select multiple class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Default file input</label>
+                                    <div class="col-10">
+                                        <input type="file" class="form-control">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Date</label>
+                                    <div class="col-10">
+                                        <input class="form-control" type="date" name="date">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Month</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="month" name="month">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Time</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="time" name="time">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Week</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="week" name="week">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Number</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="number" name="number">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">URL</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="url" name="url">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Search</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="search" name="search">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Tel</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="tel" name="tel">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Color</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="color" name="color">
+                                    </div>
+                                </div>
+                
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label">Range</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="range" name="range" min="0" max="10">
+                                    </div>
+                                </div>
+                
+                            </form>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Select menu</h4>
+                        <p class="text-muted">
+                            Custom <code class="highlighter-rouge">&lt;select&gt;</code> menus need only a custom class, <code class="highlighter-rouge">.custom-select</code>
+                            to trigger the custom styles.
+                        </p>
+                
+                        <select class="custom-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Checkboxes and radios</h4>
+                        <div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Advanced</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Select2</h4>
+                        
+                        <p class="text-muted">Single Select</p>
+                        <p class="text-muted">
+                            Select2 can take a regular select box like this...
+                        </p>
+
+                        <select class="form-control select-dropdown" multiple>
+                            <option>Select</option>
+                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="Mountain Time Zone">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                                <option value="ID">Idaho</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                            <optgroup label="Central Time Zone">
+                                <option value="AL">Alabama</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TX">Texas</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="WI">Wisconsin</option>
+                            </optgroup>
+                            <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="IN">Indiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="OH">Ohio</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WV">West Virginia</option>
+                            </optgroup>
+                        </select>
+                        
+                        <select class="form-control select-with-search">
+                            <option>Select</option>
+                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="Mountain Time Zone">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                                <option value="ID">Idaho</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                            <optgroup label="Central Time Zone">
+                                <option value="AL">Alabama</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TX">Texas</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="WI">Wisconsin</option>
+                            </optgroup>
+                            <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="IN">Indiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="OH">Ohio</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WV">West Virginia</option>
+                            </optgroup>
+                        </select>
+                        
+                        <p class="text-muted mt-3">Multiple Select</p>
+                        <p class="text-muted">
+                            Select2 can take a regular select box like this...
+                        </p>
+                        
+                        <select class="select2 form-control select-with-search" multiple="multiple" multiple data-placeholder="Choose ...">
+                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="Mountain Time Zone">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                                <option value="ID">Idaho</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                            <optgroup label="Central Time Zone">
+                                <option value="AL">Alabama</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TX">Texas</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="WI">Wisconsin</option>
+                            </optgroup>
+                            <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="IN">Indiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="OH">Ohio</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WV">West Virginia</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Tags Input</h4>
+                        
+                        <p class="text-muted font-weight-bold">Input Tags</p>
+                        <p class="text-muted">
+                            Just add <code>data-role="tagsinput"</code> to your input field to automatically change it to a tags input field.
+                        </p>
+                        <div class="tags-default">
+                            <input type="text" value="Amsterdam,Washington,Sydney" data-role="tagsinput" placeholder="add tags" />
+                        </div>
+                        
+                        <p class="mt-3 font-weight-bold text-muted">True multi value</p>
+                        <p class="text-muted">
+                            Use a <code>&lt;select multiple /&gt;</code> as your input element for a tags input, to gain true multivalue
+                            support.
+                            Instead of a comma separated string, the values will be set in an array. Existing <code>&lt;option /&gt;</code>
+                            elements will automatically be set as tags. This makes it also possible to create tags containing a comma.
+                        </p>
+                        <div class="m-b-0">
+                            <select multiple data-role="tagsinput">
+                                <option value="Amsterdam">Amsterdam</option>
+                                <option value="Washington">Washington</option>
+                                <option value="Sydney">Sydney</option>
+                                <option value="Beijing">Beijing</option>
+                                <option value="Cairo">Cairo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Mask</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Input Masks</h4>
+                        <p class="text-muted">
+                            Your awesome text goes here.Your awesome text goes here.
+                        </p>
+                        
+                        <form action="#">
+                            <div class="form-group">
+                                <label>ISBN 1</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '999-99-999-9999-9'" class="form-control">
+                                <span class="text-muted">e.g "999-99-999-9999-9"</span>
+                            </div>
+                            <div class="form-group">
+                                <label>ISBN 2</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '999 99 999 9999 9'" class="form-control">
+                                <span class="text-muted">999 99 999 9999 9</span>
+                            </div>
+                            <div class="form-group">
+                                <label>ISBN 3</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '999/99/999/9999/9'" class="form-control">
+                                <span class="text-muted">999/99/999/9999/9</span>
+                            </div>
+                            <div class="form-group">
+                                <label>IPV4</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '999.999.999.999'" class="form-control">
+                                <span class="text-muted">192.168.110.310</span>
+                            </div>
+                            <div class="form-group m-b-0">
+                                <label>IPV6</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '9999:9999:9999:9:999:9999:9999:9999'" class="form-control">
+                                <span class="text-muted">4deg:1340:6547:2:540:h8je:ve73:98pd</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Input Masks</h4>
+                        <p class="text-muted">
+                            Your awesome text goes here.Your awesome text goes here.
+                        </p>
+                        
+                        <form action="#">
+                            <div class="form-group">
+                                <label>Tax ID</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '99-9999999'" class="form-control">
+                                <span class="text-muted">99-9999999</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '(999) 999-9999'" class="form-control">
+                                <span class="text-muted">(999) 999-9999</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Currency</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '$ 999,999,999.99'" class="form-control">
+                                <span class="text-muted">$ 999,999,999.99</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '99/99/9999'" class="form-control">
+                                <span class="text-muted">dd/mm/yyyy</span>
+                            </div>
+                            <div class="form-group m-b-0">
+                                <label>Date 2</label>
+                                <input type="text" placeholder="" data-inputmask="'mask' : '99-99-9999'" class="form-control">
+                                <span class="text-muted">dd-mm-yyyy</span>
+                            </div>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Pickers</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="mb-3">Colorpicker</h4>
+                        <p>Bootstrap Colorpicker is a modular color picker plugin for Bootstrap 4.</p>
+                        <div class="form-group">
+                            <input type="text" class="form-control color-picker">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Timepicker</h4>
+                        <p class="text-muted">
+                            Easily select a time for a text input using your mouse or keyboards arrow keys.
+                        </p>
+        
+                        <div class="form-group">
+                            <label>Default Time Picker</label>
+        
+                            <div class="input-group">
+                                <input type="text" class="form-control timepicker">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <label>24 Hour Mode Time Picker</label>
+        
+                            <div class="input-group">
+                                <input type="text" class="form-control timepicker-24">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-clock"></i></span>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="form-group">
+                            <label>Specify a step for the minute field</label>
+        
+                            <div class="input-group">
+                                <input type="text" class="form-control timepicker-step">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Date Range Picker</h4>
+                        <p class="text-muted">
+                            A JavaScript component for choosing date ranges.
+                            Designed to work with the Bootstrap CSS framework.
+                        </p>
+        
+                        <form>
+                            <div class="form-group">
+                                <label>With all options</label>
+                                <input type="text" class="form-control reportrange" />
+                            </div>
+                            <div class="form-group">
+                                <label>Date Range Pick</label>
+                                <div>
+                                    <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="01/01/2017 - 01/31/2018" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Date Range With Time</label>
+                                <div>
+                                    <input type="text" class="form-control input-daterange-timepicker" name="daterange" value="01/01/2017 1:30 PM - 01/01/2017 2:00 PM" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Limit Selectable Dates</label>
+                                <div>
+                                    <input class="form-control input-limit-datepicker" type="text" name="daterange" value="06/01/2017 - 06/07/2017" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="mb-3">Date Picker</h4>
+                        <p class="text-muted">
+                            The datepicker is tied to a standard form input field. Click on the input to open
+                            an interactive calendar in a small overlay. Click elsewhere on the page or hit the Esc
+                            key to close. If a date is chosen, feedback is shown as the input's value.
+                        </p>
+                        
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="form-group">
+                                        <label>Default Functionality</label>
+                                        <div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control datepicker" placeholder="mm/dd/yyyy">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <label>Auto Close</label>
+                                        <div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <label>Multiple Date</label>
+                                        <div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control datepicker-multiple-date" placeholder="mm/dd/yyyy">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <label>Date Range</label>
+                                        <div>
+                                            <div class="input-daterange input-group date-range" id="date-range">
+                                                <input type="text" class="form-control" name="start" />
+                                                <input type="text" class="form-control" name="end" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-lg-4">
+                                    <label>Display Inline</label>
+                                    <div class="center-block" style="margin: 10px auto">
+                                        <div class="datepicker-inline"></div>
+                                    </div><!-- input-group -->
+                                </div>
+                            </div>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Validation</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Basic Form</h4>
+                        <p class="text-muted">
+                            Parsley is a javascript form validation library. It helps you provide your users with feedback on
+                            their form submission before sending it to your server.
+                        </p>
+        
+                        <form action="#" class="form-validation">
+                            <div class="form-group">
+                                <label for="userName">User Name<span class="text-danger">*</span></label>
+                                <input type="text" name="nick" parsley-trigger="change" required placeholder="Enter user name"
+                                    class="form-control" id="userName">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailAddress">Email address<span class="text-danger">*</span></label>
+                                <input type="email" name="email" parsley-trigger="change" required placeholder="Enter email"
+                                    class="form-control" id="emailAddress">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass1">Password<span class="text-danger">*</span></label>
+                                <input id="pass1" type="password" placeholder="Password" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="passWord2">Confirm Password <span class="text-danger">*</span></label>
+                                <input data-parsley-equalto="#pass1" type="password" required placeholder="Password" class="form-control"
+                                    id="passWord2">
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox checkbox-purple">
+                                    <input id="checkbox6a" type="checkbox">
+                                    <label for="checkbox6a">
+                                        Remember me
+                                    </label>
+                                </div>
+        
+                            </div>
+        
+                            <div class="form-group text-right m-b-0">
+                                <button class="btn btn-primary" type="submit">
+                                    Submit
+                                </button>
+                                <button type="reset" class="btn btn-light">
+                                    Cancel
+                                </button>
+                            </div>
+        
+                        </form>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Horizontal Form</h4>
+                        <p class="text-muted">
+                            Parsley is a javascript form validation library. It helps you provide your users with feedback on
+                            their form submission before sending it to your server.
+                        </p>
+        
+                        <form role="form" class="form-validation">
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-4 col-form-label">Email<span class="text-danger">*</span></label>
+                                <div class="col-7">
+                                    <input type="email" required parsley-type="email" class="form-control" id="inputEmail3"
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="hori-pass1" class="col-4 col-form-label">Password<span class="text-danger">*</span></label>
+                                <div class="col-7">
+                                    <input id="hori-pass1" type="password" placeholder="Password" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="hori-pass2" class="col-4 col-form-label">Confirm Password
+                                    <span class="text-danger">*</span></label>
+                                <div class="col-7">
+                                    <input data-parsley-equalto="#hori-pass1" type="password" required placeholder="Password"
+                                        class="form-control" id="hori-pass2">
+                                </div>
+                            </div>
+        
+                            <div class="form-group row">
+                                <label for="webSite" class="col-4 col-form-label">Web Site<span class="text-danger">*</span></label>
+                                <div class="col-7">
+                                    <input type="url" required parsley-type="url" class="form-control" id="webSite" placeholder="URL">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-8 offset-4">
+                                    <div class="checkbox checkbox-purple">
+                                        <input id="checkbox6" type="checkbox">
+                                        <label for="checkbox6">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-8 offset-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Register
+                                    </button>
+                                    <button type="reset" class="btn btn-light">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Validation type</h4>
+                        <p class="text-muted">
+                            Parsley is a javascript form validation library. It helps you provide your users with feedback on
+                            their form submission before sending it to your server.
+                        </p>
+        
+                        <form class="form-validation" action="#">
+                            <div class="form-group">
+                                <label>Required</label>
+                                <input type="text" class="form-control" required placeholder="Type something" />
+                            </div>
+        
+                            <div class="form-group">
+                                <label>Equal To</label>
+                                <div>
+                                    <input type="password" id="pass2" class="form-control" required placeholder="Password" />
+                                </div>
+                                <div class="mt-2">
+                                    <input type="password" class="form-control" required data-parsley-equalto="#pass2"
+                                        placeholder="Re-Type Password" />
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label>E-Mail</label>
+                                <div>
+                                    <input type="email" class="form-control" required parsley-type="email" placeholder="Enter a valid e-mail" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>URL</label>
+                                <div>
+                                    <input parsley-type="url" type="url" class="form-control" required placeholder="URL" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Digits</label>
+                                <div>
+                                    <input data-parsley-type="digits" type="text" class="form-control" required placeholder="Enter only digits" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Number</label>
+                                <div>
+                                    <input data-parsley-type="number" type="text" class="form-control" required placeholder="Enter only numbers" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Alphanumeric</label>
+                                <div>
+                                    <input data-parsley-type="alphanum" type="text" class="form-control" required placeholder="Enter alphanumeric value" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Textarea</label>
+                                <div>
+                                    <textarea required class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <button type="submit" class="btn btn-primary">
+                                        Submit
+                                    </button>
+                                    <button type="reset" class="btn btn-light">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Range validation</h4>
+                        <p class="text-muted">
+                            Parsley is a javascript form validation library. It helps you provide your users with feedback on
+                            their form submission before sending it to your server.
+                        </p>
+        
+                        <form action="#" class="form-validation">
+        
+                            <div class="form-group">
+                                <label>Min Length</label>
+                                <div>
+                                    <input type="text" class="form-control" required data-parsley-minlength="6" placeholder="Min 6 chars." />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Max Length</label>
+                                <div>
+                                    <input type="text" class="form-control" required data-parsley-maxlength="6" placeholder="Max 6 chars." />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Range Length</label>
+                                <div>
+                                    <input type="text" class="form-control" required data-parsley-length="[5,10]" placeholder="Text between 5 - 10 chars length" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Min Value</label>
+                                <div>
+                                    <input type="text" class="form-control" required data-parsley-min="6" placeholder="Min value is 6" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Max Value</label>
+                                <div>
+                                    <input type="text" class="form-control" required data-parsley-max="6" placeholder="Max value is 6" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Range Value</label>
+                                <div>
+                                    <input class="form-control" required type="text" min="6" max="100" placeholder="Number between 6 - 100" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Regular Exp</label>
+                                <div>
+                                    <input type="text" class="form-control" required data-parsley-pattern="#[A-Fa-f0-9]{6}"
+                                        placeholder="Hex. Color" />
+                                </div>
+                            </div>
+        
+                            <div class="form-group m-b-0">
+                                <div>
+                                    <button type="submit" class="btn btn-primary">
+                                        Submit
+                                    </button>
+                                    <button type="reset" class="btn btn-light">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Wizard</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-2">
+                            <div class="card-header">Step Wizard</div>
+                            <div class="card-body wizard-content">
+                                <h6 class="card-subtitle">You can find the <a href="http://www.jquery-steps.com" target="_blank">offical
+                                        website</a></h6>
+                                <form action="#" class="tab-wizard wizard-circle">
+                                    <!-- Step 1 -->
+                                    <h6>Personal Info</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="firstName1">First Name :</label>
+                                                    <input type="text" class="form-control" id="firstName1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="lastName1">Last Name :</label>
+                                                    <input type="text" class="form-control" id="lastName1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="emailAddress1">Email Address :</label>
+                                                    <input type="email" class="form-control" id="emailAddress1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phoneNumber1">Phone Number :</label>
+                                                    <input type="tel" class="form-control" id="phoneNumber1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="location1">Select City :</label>
+                                                    <select class="custom-select form-control" id="location1" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="Amsterdam">India</option>
+                                                        <option value="Berlin">USA</option>
+                                                        <option value="Frankfurt">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="date1">Date of Birth :</label>
+                                                    <input type="date" class="form-control" id="date1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 2 -->
+                                    <h6>Job Status</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle1">Job Title :</label>
+                                                    <input type="text" class="form-control" id="jobTitle1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="videoUrl1">Company Name :</label>
+                                                    <input type="text" class="form-control" id="videoUrl1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="shortDescription1">Job Description :</label>
+                                                    <textarea name="shortDescription" id="shortDescription1" rows="6" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6>Interview</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="int1">Interview For :</label>
+                                                    <input type="text" class="form-control" id="int1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="intType1">Interview Type :</label>
+                                                    <select class="custom-select form-control" id="intType1" data-placeholder="Type to search cities"
+                                                        name="intType1">
+                                                        <option value="Banquet">Normal</option>
+                                                        <option value="Fund Raiser">Difficult</option>
+                                                        <option value="Dinner Party">Hard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Location1">Location :</label>
+                                                    <select class="custom-select form-control" id="Location1" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle2">Interview Date :</label>
+                                                    <input type="date" class="form-control" id="jobTitle2">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Requirements :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">Employee</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">Contract</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 4 -->
+                                    <h6>Remark</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="behName1">Behaviour :</label>
+                                                    <input type="text" class="form-control" id="behName1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Confidance</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Result</label>
+                                                    <select class="custom-select form-control" id="participants1" name="location">
+                                                        <option value="">Select Result</option>
+                                                        <option value="Selected">Selected</option>
+                                                        <option value="Rejected">Rejected</option>
+                                                        <option value="Call Second-time">Call Second-time</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">1 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">2 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">3 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">4 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">5 star</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row" id="validation">
+                    <div class="col-md-12">
+                        <div class="card mb-2">
+                            <div class="card-header">Step Wizard with Validation</div>
+                            <div class="card-body wizard-content">
+                                <h6 class="card-subtitle">You can us the validation like what we did</h6>
+                                <form action="#" class="validation-wizard wizard-circle">
+                                    <!-- Step 1 -->
+                                    <h6>Step 1</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wfirstName2"> First Name : <span class="danger">*</span> </label>
+                                                    <input type="text" class="form-control required" id="wfirstName2" name="firstName">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wlastName2"> Last Name : <span class="danger">*</span> </label>
+                                                    <input type="text" class="form-control required" id="wlastName2" name="lastName">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wemailAddress2"> Email Address : <span class="danger">*</span> </label>
+                                                    <input type="email" class="form-control required" id="wemailAddress2" name="emailAddress">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wphoneNumber2">Phone Number :</label>
+                                                    <input type="tel" class="form-control" id="wphoneNumber2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wlocation2"> Select City : <span class="danger">*</span> </label>
+                                                    <select class="custom-select form-control required" id="wlocation2" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wdate2">Date of Birth :</label>
+                                                    <input type="date" class="form-control" id="wdate2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 2 -->
+                                    <h6>Step 2</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle2">Company Name :</label>
+                                                    <input type="text" class="form-control required" id="jobTitle2">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="webUrl3">Company URL :</label>
+                                                    <input type="url" class="form-control required" id="webUrl3" name="webUrl3">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="shortDescription3">Short Description :</label>
+                                                    <textarea name="shortDescription" id="shortDescription3" rows="6" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6>Step 3</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wint1">Interview For :</label>
+                                                    <input type="text" class="form-control required" id="wint1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="wintType1">Interview Type :</label>
+                                                    <select class="custom-select form-control required" id="wintType1" data-placeholder="Type to search cities"
+                                                        name="wintType1">
+                                                        <option value="Banquet">Normal</option>
+                                                        <option value="Fund Raiser">Difficult</option>
+                                                        <option value="Dinner Party">Hard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="wLocation1">Location :</label>
+                                                    <select class="custom-select form-control required" id="wLocation1" name="wlocation">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wjobTitle2">Interview Date :</label>
+                                                    <input type="date" class="form-control required" id="wjobTitle2">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Requirements :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">Employee</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">Contract</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 4 -->
+                                    <h6>Step 4</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="behName1">Behaviour :</label>
+                                                    <input type="text" class="form-control required" id="behName1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Confidance</label>
+                                                    <input type="text" class="form-control required" id="participants1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Result</label>
+                                                    <select class="custom-select form-control required" id="participants1" name="location">
+                                                        <option value="">Select Result</option>
+                                                        <option value="Selected">Selected</option>
+                                                        <option value="Rejected">Rejected</option>
+                                                        <option value="Call Second-time">Call Second-time</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">1 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">2 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">3 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">4 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">5 star</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-2">
+                            <div class="card-header">Step Wizard Vertical</div>
+                            <div class="card-body wizard-content">
+                                <h6 class="card-subtitle">You can find the <a href="http://www.jquery-steps.com" target="_blank">offical
+                                        website</a></h6>
+                                <form action="#" class="tab-wizard vertical wizard-circle">
+                                    <!-- Step 1 -->
+                                    <h6>Personal Info</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="firstName1">First Name :</label>
+                                                    <input type="text" class="form-control" id="firstName1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="lastName1">Last Name :</label>
+                                                    <input type="text" class="form-control" id="lastName1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="emailAddress1">Email Address :</label>
+                                                    <input type="email" class="form-control" id="emailAddress1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phoneNumber1">Phone Number :</label>
+                                                    <input type="tel" class="form-control" id="phoneNumber1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="location1">Select City :</label>
+                                                    <select class="custom-select form-control" id="location1" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="Amsterdam">India</option>
+                                                        <option value="Berlin">USA</option>
+                                                        <option value="Frankfurt">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="date1">Date of Birth :</label>
+                                                    <input type="date" class="form-control" id="date1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 2 -->
+                                    <h6>Job Status</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle1">Job Title :</label>
+                                                    <input type="text" class="form-control" id="jobTitle1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="videoUrl1">Company Name :</label>
+                                                    <input type="text" class="form-control" id="videoUrl1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="shortDescription1">Job Description :</label>
+                                                    <textarea name="shortDescription" id="shortDescription1" rows="6" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6>Interview</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="int1">Interview For :</label>
+                                                    <input type="text" class="form-control" id="int1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="intType1">Interview Type :</label>
+                                                    <select class="custom-select form-control" id="intType1" data-placeholder="Type to search cities"
+                                                        name="intType1">
+                                                        <option value="Banquet">Normal</option>
+                                                        <option value="Fund Raiser">Difficult</option>
+                                                        <option value="Dinner Party">Hard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Location1">Location :</label>
+                                                    <select class="custom-select form-control" id="Location1" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle2">Interview Date :</label>
+                                                    <input type="date" class="form-control" id="jobTitle2">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Requirements :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">Employee</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">Contract</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 4 -->
+                                    <h6>Remark</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="behName1">Behaviour :</label>
+                                                    <input type="text" class="form-control" id="behName1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Confidance</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Result</label>
+                                                    <select class="custom-select form-control" id="participants1" name="location">
+                                                        <option value="">Select Result</option>
+                                                        <option value="Selected">Selected</option>
+                                                        <option value="Rejected">Rejected</option>
+                                                        <option value="Call Second-time">Call Second-time</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">1 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">2 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">3 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">4 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span>
+                                                            <span class="custom-control-description ml-0">5 star</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Upload</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <form>
+                                    <div id="dropzone-cards" data-action-url="http://localhost:8080/">
+                                        <div class="media-list">
+                                            <div class="dropzone-form" id="dropzone-cards-form" style="cursor: pointer;">
+                                                <div class="dz-message needsclick">
+                                                    <p>Drop files here or click to upload.<br>
+                                                        <span class="note needsclick">
+                                                            (This is just a demo dropzone. Selected files are
+                                                            <strong>not</strong> actually uploaded.)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="dropzone-previews" id="dropzone-previews">
+                                                    <div class="dz-template" id="dropzone-cards-template">
+                                                        <div class="media-list-item uploading">
+                                                            <div class="media-list-action d-flex">
+                                                                <button type="button" class="btn btn-info btn-xs btn-edit mr-2" data-toggle="modal"
+                                                                    data-target="#modal-edit">Edit</button>
+                                                                <button type="button" class="btn btn-danger btn-xs">
+                                                                    <i class="fas fa-trash"></i>
+                                                                </button>
+                                                            </div>
+                                                            
+                                                            <input type="checkbox" id="media-1">
+                                                            <label class="media-item" for="media-1">
+                                                                <img data-dz-thumbnail>
+                                                                <div class="media-item-file-details">
+                                                                    <div class="media-item-icon">
+                                                                        <i class="fas fa-file-powerpoint"></i>
+                                                                    </div>
+                                                                    <div class="media-item-file-name" data-dz-name></div>
+                                                                    <div class="media-item-file-extension"></div>
+                                                                </div>
+                                                            </label>
+                    
+                                                            <div class="upload-progress">
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                                        role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 0%" data-dz-uploadprogress></div>
+                                                                </div>
+                                                            </div>
+                    
+                                                            <div class="media-item-file-error">
+                                                                <div class="media-item-icon-error">
+                                                                    <i class="fas fa-exclamation-circle"></i>
+                                                                </div>
+                                                                <div class="media-item-file-name-error" data-dz-errormessage></div>
+                                                                <div class="media-item-file-extension-error d-flex justify-content-center">
+                                                                    <button type="button" class="btn btn-outline-light btn-sm"
+                                                                        data-dz-remove>
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Table Upload</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div id="dropzone-table-form">
+                                    <div id="dropzone-table" data-action-url="http://localhost:8080/">
+                                        <div id="dropzone-table-actions" class="row">
+                    
+                                            <div class="col-lg-7">
+                                                <!-- The fileinput-button span is used to style the file input field as button -->
+                                                <button type="button" class="btn btn-primary fileinput-button" id="dropzone-add-file">
+                                                    <span>Add files</span>
+                                                </button>
+                                                <button type="submit" class="btn btn-primary start">
+                                                    <span>Start upload</span>
+                                                </button>
+                                                <button type="reset" class="btn btn-default cancel">
+                                                    <span>Cancel upload</span>
+                                                </button>
+                                            </div>
+                    
+                                            <div class="col-lg-5">
+                                                <!-- The global file processing state -->
+                                                <span class="fileupload-process">
+                                                    <div id="dropzone-table-total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                        <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                                                    </div>
+                                                </span>
+                                            </div>
+                    
+                                        </div>
+                                        
+                                        <div class="media-list-table">
+                                            <div id="dropzone-table-previews">
+                                                <div class="dz-template row" id="dropzone-table-template">
+                                                    <div class="col-md-2">
+                                                        <div class="thumbnail">
+                                                            <img data-dz-thumbnail>
+                                                            <div class="media-item-file-details">
+                                                                <div class="media-item-icon">
+                                                                    <i class="fas fa-file"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        <span data-dz-name></span>
+                                                        <strong class="error text-danger" data-dz-errormessage></strong>
+                                                        <div class="upload-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                                                    aria-valuemax="100" style="width: 0%" data-dz-uploadprogress></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="btn-group btn-group-sm">
+                                                            <button class="btn btn-primary start">
+                                                                <span>Start</span>
+                                                            </button>
+                                                            <button data-dz-remove class="btn btn-default cancel">
+                                                                <span>Cancel</span>
+                                                            </button>
+                                                            <button data-dz-remove class="btn btn-danger delete">
+                                                                <span>Delete</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h2 class="font-weight-bold">Form Editor</h2>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <p class="text-muted">Full Editor</p>
+                                <form>
+                                    <textarea class="form-control tinymce"></textarea>
+                                </form>
+                            </div>
+                        </div>
+                
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <p class="text-muted">Inline Editor</p>
+                                <div class="tinymce-inline">
+                                    <h3>Your content goes here</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+<script type="text/javascript" src=".//venus-form-ui.js?1d2fc0e2ee685fc1350b"></script></body>
+
+</html>

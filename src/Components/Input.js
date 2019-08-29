@@ -27,6 +27,7 @@ export default class Input {
      * Input.constructor
      */
     constructor() {
+        alert('Input Masuk');
         this.date = new Date();
         //this.color = new Color();
         this.time = new Time();
