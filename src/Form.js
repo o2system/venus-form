@@ -9,6 +9,7 @@
  */
 // ------------------------------------------------------------------------
 
+import UserInterface from 'o2system-venus-ui';
 import $ from 'jquery';
 import Input from './Components/Input';
 import Select from './Components/Select';
@@ -16,13 +17,12 @@ import Validation from './Components/Validation';
 import Wizard from './Components/Wizard';
 import Upload from './Components/Upload';
 import Editor from './Components/Editor';
-import './Form.scss';
 
 /**
  * Class Form
  */
-export default class Form {
-    constructor() {
+class Form {
+    constructor() {               
         window.$ = window.jQuery = $;
         
         /**
@@ -41,3 +41,5 @@ export default class Form {
         this.editor = new Editor();
     }
 }
+
+module.exports = new Form;

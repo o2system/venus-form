@@ -3,7 +3,7 @@
 .dropzone-previews{
 	display: none;
 }
-.dz-template{
+#dropzone-cards .dz-template{
 	margin: 0 15px;
 	width: calc(100% / 3 - 30px);
 	display: inline-block;
@@ -220,6 +220,40 @@
 					opacity: 0;
 				}
 			}
+		}
+	}
+}
+
+.media-list-table{
+	margin-top: 1rem;
+
+	.dz-template{
+		display: flex;
+		align-items: center;
+
+		+ .dz-template{
+			margin-top: 1rem;
+		}
+	}
+	.thumbnail{
+		width: 80px;
+		height: 80px;
+		border: 1px solid #ddd;
+		overflow: hidden;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.upload-progress{
+		margin-top: 0.5rem;
+		.progress{
+			height: 5px;
 		}
 	}
 }

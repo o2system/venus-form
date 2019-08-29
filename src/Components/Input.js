@@ -22,7 +22,6 @@ import Mask from './Input/Mask';
  * @package         Components
  */
 export default class Input {
-
     /**
      * Input.constructor
      */
