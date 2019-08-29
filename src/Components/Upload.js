@@ -33,6 +33,8 @@ export default class Upload {
     }
 
     initDropzone() {
+        Dropzone.autoDiscover = false;
+
         if (typeof Dropzone != 'undefined') {
             Dropzone.autoDiscover = false;
 
@@ -41,6 +43,9 @@ export default class Upload {
             if(dropzoneCards.length) {
 
                 let dropzoneCardsActionUrl = dropzoneCards.data('action-url');
+                let dropzoneCardsDataAllowed = dropzoneCards.data('allowed');
+                let dropzoneCardsDataMaxFile = dropzoneCards.data('max-file');
+                let dropzoneCardsDataMaxSize = dropzoneCards.data('max-size');
 
                 let dropzoneCardsFilePreview = dropzoneCards.find('#dropzone-cards-template');
                 dropzoneCardsFilePreview.removeAttr('id');
@@ -50,6 +55,9 @@ export default class Upload {
 
                 let dropzoneCardsForm = new Dropzone('#dropzone-cards-form', {
                     url: dropzoneCardsActionUrl,
+                    acceptedFiles: dropzoneCardsDataAllowed,
+                    maxFiles: dropzoneCardsDataMaxFile,
+                    maxFilesize: dropzoneCardsDataMaxSize,
                     autoProcessQueue: true,
                     thumbnailWidth: null,
                     thumbnailHeight: null,
