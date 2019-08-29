@@ -13,4 +13,4 @@ import Form from './Form';
 /**
  * Form Object
  */
-export default new Form;
+export default Form;
