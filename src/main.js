@@ -13,4 +13,4 @@ import Form from './Form';
 /**
  * Form Object
  */
-module.exports = new Form();
+export default new Form;

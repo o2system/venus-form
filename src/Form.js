@@ -42,4 +42,4 @@ class Form {
     }
 }
 
-module.exports = new Form;
+export default new Form;
