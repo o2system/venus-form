@@ -62,7 +62,7 @@
     "jquery-steps": "github:rstaib/jquery-steps#master",
     "jquery-validation": "^1.19.0",
     "moment": "^2.24.0",
-    "o2system-venus-ui": "git+https://github.com/o2system/venus-ui.git",
+    "o2system-venus-ui": "github:o2system/venus-ui#old",
     "parsleyjs": "^2.9.0",
     "select2": "^4.0.6-rc.1",
     "selectize": "^0.12.6",
