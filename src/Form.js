@@ -17,12 +17,13 @@ import Validation from './Components/Validation';
 import Wizard from './Components/Wizard';
 import Upload from './Components/Upload';
 import Editor from './Components/Editor';
+import './Form.scss';
 
 /**
  * Class Form
  */
-class Form {
-    constructor() {               
+export default class Form {
+    constructor() {                
         window.$ = window.jQuery = $;
         
         /**
@@ -41,5 +42,3 @@ class Form {
         this.editor = new Editor();
     }
 }
-
-export default new Form;

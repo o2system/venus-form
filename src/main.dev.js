@@ -8,6 +8,12 @@
  * @copyright      Copyright (c) Steeve Andrian Salim
  */
 // ------------------------------------------------------------------------
+
+// require("@babel/runtime");
+// import "@babel/polyfill";
+// import "webpack-hot-middleware/client?reload=true";
+import "./index.html";
+
 import Form from './Form';
 
 /**

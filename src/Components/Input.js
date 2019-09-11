@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------
 
 import Date from './Input/Date';
-import Color from './Input/Color';
+//import Color from './Input/Color';
 import Time from './Input/Time';
 import Tags from './Input/Tags';
 import Mask from './Input/Mask';
@@ -22,12 +22,13 @@ import Mask from './Input/Mask';
  * @package         Components
  */
 export default class Input {
+
     /**
      * Input.constructor
      */
     constructor() {
         this.date = new Date();
-        this.color = new Color();
+        //this.color = new Color();
         this.time = new Time();
         this.tags = new Tags();
         this.mask = new Mask();

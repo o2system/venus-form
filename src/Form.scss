@@ -8,7 +8,10 @@
  * @copyright      Copyright (c) Steeve Andrian Salim
  */
 
- @import "~o2system-venus-ui/src/UserInterface.scss";
+ @import "~o2system-venus-ui/src/Bootstrap/Functions.scss";
+ @import "~o2system-venus-ui/src/Bootstrap/Variables.scss";
+@import "~o2system-venus-ui/src/Bootstrap/Mixins.scss";
+@import "~o2system-venus-ui/src/Components/Mixins.scss";
 
  @import "./Components/Input/Date.scss";
  @import "./Components/Input/Tags.scss";

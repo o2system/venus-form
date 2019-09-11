@@ -1,7 +1,6 @@
 @import "~select2/dist/css/select2.min.css";
 @import "~bootstrap-select/dist/css/bootstrap-select.min.css";
 @import "~selectize-bootstrap4-theme/dist/css/selectize.bootstrap4.css";
-@import "~multiselect/css/multi-select.css";
 
 /* Select 2 */
 .select2-container {
@@ -116,26 +115,4 @@
 /* Selectize */
 .form-control.selectize-control .selectize-input.focus {
     box-shadow: none;
-}
-
-.bootstrap-select.form-control {
-	color: #495057;
-	.dropdown-toggle{
-		background-color: $white;
-		border: 1px solid #ced4da;
-		color: #495057;
-		//border: 0;
-	
-		&:hover, &:focus{
-			background-color: $white;
-		}
-	
-		&:focus{
-			border-color: $primary;
-		}
-	}
-}
-
-.ms-container{
-    width: 100%;
 }

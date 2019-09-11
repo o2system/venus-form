@@ -61,7 +61,7 @@ export default class Editor {
                 'searchreplace visualblocks code fullscreen',
                 'insertdatetime media table contextmenu paste code help wordcount'
             ],
-            toolbar: 'formatselect | bold italic blockquote alignleft aligncenter alignright alignjustify bullist numlist outdent indent removeformat | image media | code',
+            toolbar: 'insert |  formatselect | bold italic blockquote alignleft aligncenter alignright alignjustify bullist numlist outdent indent removeformat | code',
             setup : function(ed)
             {
                 ed.on('init', function() 
