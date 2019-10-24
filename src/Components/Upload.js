@@ -58,6 +58,7 @@ export default class Upload {
                     acceptedFiles: dropzoneCardsDataAllowed,
                     maxFiles: dropzoneCardsDataMaxFile,
                     maxFilesize: dropzoneCardsDataMaxSize,
+                    timeout: 180000,
                     autoProcessQueue: true,
                     thumbnailWidth: null,
                     thumbnailHeight: null,
@@ -121,13 +122,14 @@ export default class Upload {
                 let dropzoneTableForm = new Dropzone('#dropzone-table-form', {
                     url: dropzoneTableActionUrl,
                     autoProcessQueue: false,
+                    timeout: 180000,
                     thumbnailWidth: null,
                     thumbnailHeight: null,
                     previewTemplate: dropzoneTableFilePreviewTemplate, // Define the container to display the previews
                     previewsContainer: ".media-list-table",
                     clickable: "#dropzone-add-file", // Define the element that should be used as click trigger to select files.
                 });
-                
+
                 dropzoneTableForm.on("addedfile", function (file) {
                     console.log('test');
                     var imagesFileTypes = ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'];
