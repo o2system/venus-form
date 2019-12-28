@@ -2,7 +2,7 @@
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/o2system/venus-form/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/o2system/venus-form/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/o2system/venus-form/badges/build.png?b=master)](https://scrutinizer-ci.com/g/o2system/venus-form/build-status/master)
-![npm](https://img.shields.io/npm/dt/o2system-blender)
+![npm](https://img.shields.io/npm/dt/o2system-venus-form)
 ![License](https://img.shields.io/github/license/o2system/venus-form.svg)
 
 # O2System Venus
